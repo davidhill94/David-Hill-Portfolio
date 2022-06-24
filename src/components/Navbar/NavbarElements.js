@@ -27,7 +27,7 @@ width: 100%;
 padding: 0 24px;
 max-width: 1100px;
 `
-export const  NavLogo = styled.img`
+export const  NavLogo = styled.div`
 cursor: pointer;
 height: 60px;
 width: auto;
