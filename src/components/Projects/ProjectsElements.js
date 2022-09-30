@@ -22,7 +22,7 @@ justify-content: center;
 text-align: center;
 position: relative;
 font-family: 'Poppins', sans-serif;
-z-index: 1;
+z-index: 4;
 
 @media screen and (max-width: 768px){
     min-height: 100vh;

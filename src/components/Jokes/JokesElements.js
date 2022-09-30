@@ -73,7 +73,7 @@ animation: ${cardAnimation};
 animation-duration: 8s;
 animation-fill-mode: forwards;
 animation-iteration-count: infinite;
-z-index: 1;
+z-index: 3;
 
 &:hover {
     font-size: 3.2rem;

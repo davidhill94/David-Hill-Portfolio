@@ -1,8 +1,13 @@
 
 import MaidenImg from '../../images/MaidenLogo.png';
-import HomeTheme from '../../images/home-theme.png';
-import MaidenThemes from '../../images/maiden-themes.png';
+import HomeTheme from '../../images/projects/maidenscorebook/home-theme.png'
+import MaidenThemes from '../../images/projects/maidenscorebook/maiden-themes.png';
+import colormerize from '../../images/projects/colormerize/colormerize.png';
+import colormerizeLives from '../../images/projects/colormerize/colormerize_timed.png';
+import colormerizeTimed from '../../images/projects/colormerize/colormerize_lives.png';
 import ComingSoon from '../../images/coming-soon.png';
+import { MaidenScorebookData } from './ProjectImageData/MaidenScorebookData';
+import { ColormerizeData } from './ProjectImageData/ColormerizeData';
 
 export const ProjectsData = [
     {
@@ -17,20 +22,19 @@ export const ProjectsData = [
         alt: 'Maiden Scorebook',
         info: "An interactive cricket scorebook that allows you to score games from any device!",
         carouselImageOne: HomeTheme,
-        carouselTextOne: 'Score any game with one click!',
         carouselImageTwo: MaidenThemes,
-        carouselTextTwo: "Choose your International theme!",
-        link: "https://maidenscorebook.com/"
+        data: MaidenScorebookData,
+        link: "https://maidenscorebook.com"
     },
     {
-        title: 'Coming Soon',
-        image: ComingSoon,
-        alt: 'Sweat',
-        info: "I'm currently building interesting projects to show off my skills",
-        carouselImageOne: ComingSoon,
-        carouselTextOne: 'Keep an eye out!',
-        carouselImageTwo: ComingSoon,
-        carouselTextTwo: 'Watch this space!'
+        title: 'Colormerize',
+        image: colormerize,
+        alt: 'Colormerize',
+        info: "A memory game with two modes and multiple difficulties",
+        carouselImageOne: colormerizeLives,
+        carouselImageTwo: colormerizeTimed,
+        data: ColormerizeData,
+        link: "https://splendorous-sundae-769eb0.netlify.app"
     },
     {
         title: 'Coming Soon',
@@ -38,9 +42,9 @@ export const ProjectsData = [
         alt: 'Maiden',
         info: "I'm currently building interesting projects to show off my skills",
         carouselImageOne: ComingSoon,
-        carouselTextOne: 'Keep an eye out!',
         carouselImageTwo: ComingSoon,
-        carouselTextTwo: 'Watch this space!'
+        data: MaidenScorebookData,
+        link: "https://splendorous-sundae-769eb0.netlify.app"
     },
     {
         title: 'Coming Soon',
@@ -48,9 +52,10 @@ export const ProjectsData = [
         alt: 'Nebula',
         info: "I'm currently building interesting projects to show off my skills",
         carouselImageOne: ComingSoon,
-        carouselTextOne: 'Keep an eye out!',
         carouselImageTwo: ComingSoon,
-        carouselTextTwo: 'Watch this space!'
+        data: MaidenScorebookData,
+        link: "https://splendorous-sundae-769eb0.netlify.app"
+    
     },
     {
         title: 'Coming Soon',
@@ -58,8 +63,8 @@ export const ProjectsData = [
         alt: 'Sweat',
         info: "I'm currently building interesting projects to show off my skills",
         carouselImageOne: ComingSoon,
-        carouselTextOne: 'Keep an eye out!',
         carouselImageTwo: ComingSoon,
-        carouselTextTwo: 'Watch this space!'
+        data: MaidenScorebookData,
+        link: "https://splendorous-sundae-769eb0.netlify.app"
     }
 ];

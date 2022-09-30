@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { ProjectsData } from './ProjectsData';
 import ArrowText from '../../images/project-text.png';
-import Carousel from './Carousel';
 import {
     ProjectItemsContainer,
     ProjectText,
@@ -14,28 +13,28 @@ import {
     ProjectTitle,
     ProjectInfo
 } from './ProjectsElements.js';
-import {
-    ProjectCarouselContainer
-} from './CarouselElements.js';
+import { Gallery } from '../Gallery/Gallery';
 
 
 const ProjectItems = () => {
+
     const [clicked, setClicked] = useState(false);
     const [hoverOrange, setHoverOrange] = useState(false);
     const [orange, setOrange] = useState(false);
     const [hoverImage, setHoverImage] = useState(false);
     const [slide, setSlide] = useState(false);
+    const [gallery, setGallery] = useState(false);
 
     const toggle = index => {
 
         if (orange === index) {
-               setClicked(null);
-               setOrange(null);
-               setSlide(null);
-        } else { 
-        setClicked(index);
-        setOrange(index);
-        setSlide(false);
+            setClicked(null);
+            setOrange(null);
+            setSlide(null);
+        } else {
+            setClicked(index);
+            setOrange(index);
+            setSlide(false);
         }
     }
 
@@ -88,14 +87,6 @@ const ProjectItems = () => {
 
     }
 
-    const toggleSlide = index => {
-        if (slide === index) {
-            return setSlide(null)
-        }
-        setSlide(index);
-        setClicked(false);
-    }
-
     const boxRef = useRef();
 
     return (
@@ -107,9 +98,9 @@ const ProjectItems = () => {
                 }
                 return (
                     <ProjectItem key={index}>
-                        <ProjectSlide>
+                        <ProjectSlide onClick={() => setGallery(true)}>
                             {orange === index ?
-                                <ImageBackground id="image-background" onClick={() => toggleSlide(index)} onMouseEnter={() => handleHoverImage()} onMouseLeave={() => setHoverImage(false)} clicked={clicked}>
+                                  <ImageBackground id="image-background" onMouseEnter={() => handleHoverImage()} onMouseLeave={() => setHoverImage(false)} clicked={clicked}>
                                     <ProjectInfo clicked={clicked} hoverImage={hoverImage}>{item.info}</ProjectInfo>
                                     <ProjectImage ref={boxRef} clicked={clicked} hoverImage={hoverImage} src={item.image} alt={item.alt}></ProjectImage>
                                 </ImageBackground>
@@ -129,14 +120,11 @@ const ProjectItems = () => {
                                     :
                                     <ProjectHeader onMouseEnter={() => handleHoverOrange(index)} onMouseLeave={() => setHoverOrange(false)} onClick={() => toggle(index)} key={index}><ProjectTitle>{item.title}</ProjectTitle></ProjectHeader>
                         }
-                        {slide === index ?
-                                <ProjectCarouselContainer href='//www.linkedin.com/in/david-hill-832ba293/' target="_blank" aria-label="Linkedin" slide={slide}>
-                                <Carousel slide={slide} imageOne={item.carouselImageOne} imageTwo={item.carouselImageTwo} textOne={item.carouselTextOne} textTwo={item.carouselTextTwo} link={item.link} title={item.title}/>
-                            </ProjectCarouselContainer>
+                        {
+                            orange === index && gallery ?
+                            <Gallery data={item.data} setGallery={setGallery} gallery={gallery} link={item.link}/>
                             :
-                            <ProjectCarouselContainer>
-                                     <Carousel />   
-                            </ProjectCarouselContainer>
+                            null
                         }
                     </ProjectItem>
                 )

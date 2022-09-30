@@ -52,7 +52,7 @@ display: none;
     margin: 24px;
     font-size: 1.8rem;
     cursor: pointer;
-    color: #fff;
+    color: var(--secondary);
 }
 `
 
@@ -76,7 +76,7 @@ font-weight: 800;
 `
 
 export const NavLinks = styled(LinkS)`
-color: #fff;
+color: var(--secondary);
 display: flex;
 align-items: center;
 justify-content: center;
