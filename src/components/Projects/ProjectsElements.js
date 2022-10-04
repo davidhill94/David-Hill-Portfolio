@@ -119,7 +119,7 @@ export const ProjectHeader = styled.div`
 display: flex;
 text-align: center;
 height: 450px;
-width: 50px;
+width: 75px;
 border-bottom: solid 10px var(--third);
 border-radius: 5px 20px;
 background: rgb(255,255,255);
@@ -168,7 +168,7 @@ pointer-events: auto;
 }
 @media screen and (max-width: 960px){
     height: 325px;
-    width: 40px;
+    width: 60px;
     margin: 0 3px;
 
     &:hover:before {
@@ -206,7 +206,7 @@ pointer-events: auto;
 }
 @media screen and (max-width: 450px){
     width: 260px;
-    height: 40px;
+    height: 50px;
 
     &:before{
         height: 40px;
@@ -224,7 +224,7 @@ export const ProjectHeaderAlt = styled.div`
 display: flex;
 text-align: center;
 height: 450px;
-width: 50px;
+width: 75px;
 border-radius: 20px 5px;
 box-shadow: 2px 2px 10px;
 background: linear-gradient(to top, #FF7900, #FF4040);
@@ -240,7 +240,7 @@ pointer-events: auto;
 }
 @media screen and (max-width: 960px){
     height: 325px;
-    width: 40px;
+    width: 60px;
 }
 @media screen and (max-width: 768px){
     height: 50px;
@@ -266,6 +266,9 @@ z-index: 2;
 @media screen and (max-width: 768px){
     writing-mode: horizontal-tb;
     margin-top: 0.4rem;
+}
+@media screen and (max-width: 500px){
+    font-size: 1rem;
 }
 `
 
