@@ -85,7 +85,7 @@ export const ModalWrapper = styled.div`
 display: ${(props) => (props.modal ? 'flex' : 'none')};
 align-items: center;
 justify-content: center;
-z-index: 2;
+z-index: 4;
 position: absolute;
 top: 0;
 right: 0;

@@ -35,7 +35,7 @@ export const ProjectsData = [
         title: 'CryptoTracker',
         image: cryptoLogo,
         alt: 'CryptoTracker',
-        info: "A an easy way to sort and track your favourite cryptocurrencies",
+        info: "An easy way to sort and track your favourite cryptocurrencies",
         data: CryptoData,
         link: "https://beautiful-truffle-3f4bd5.netlify.app"
     },
