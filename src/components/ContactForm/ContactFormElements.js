@@ -115,6 +115,7 @@ align-items: center;
 border: none;
 border-radius: 3px;
 pointer-events: auto;
+background-color: var(--secondary);
 
 &:hover {
     background-color: var(--third);
