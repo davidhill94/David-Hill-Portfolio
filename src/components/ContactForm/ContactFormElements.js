@@ -116,6 +116,7 @@ border: none;
 border-radius: 3px;
 pointer-events: auto;
 background-color: var(--secondary);
+color: var(--primary);
 
 &:hover {
     background-color: var(--third);
