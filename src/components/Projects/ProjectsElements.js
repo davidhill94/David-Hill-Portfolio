@@ -74,17 +74,18 @@ opacity: 0.1;
 
 export const ProjectWrapper = styled.div`
 display: flex;
-width: 70%;
+width: auto;
 min-height: 60vh;
 margin: 0 10rem;
 padding: 3rem 0rem;
 align-items: center;
-justify-content: flex-end;
+justify-content: center
 text-align: center;
 pointer-events: none;
 
-@media screen and (max-width: 1024px){
-    width: 80%;
+@media screen and (max-width: 1440px){
+    width: 70%;
+    justify-content: flex-end;
     padding: 3rem 0;
 }
 @media screen and (max-width: 768px){
@@ -393,6 +394,10 @@ transform: translateX(${(props) => (props.clicked || props.slide ? '-400px' : '0
 transition: transform 2s;
 margin: 1rem 2rem;
 pointer-events: none;
+
+@media screen and (min-width: 1100px){
+    transform: translateX(${(props) => (props.clicked || props.slide ? '0px' : '0px')});
+}
 
 @media screen and (max-width: 1100px){
     margin: 1rem 0rem;

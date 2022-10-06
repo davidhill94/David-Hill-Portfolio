@@ -9,7 +9,7 @@ import {
 } from './ProjectsElements.js';
 
 
-const Projects = (clicked, orange) => {
+const Projects = ({clicked, orange}) => {
 
   return (
       <ProjectContainer id="projects">
