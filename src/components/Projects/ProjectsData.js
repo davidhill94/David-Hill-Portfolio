@@ -1,12 +1,12 @@
 
 import MaidenImg from '../../images/MaidenLogo.png';
+import MaidenIcon from '../../images/cricket.png';
 import colormerize from '../../images/colormerize.png';
+import HubIcon from '../../images/hub.png';
 import cryptoLogo from '../../images/projects/cryptotracker/crypto_logo.png';
+import CryptoIcon from '../../images/crypto.png';
 import everAferLogo from '../../images/projects/EverAfterEntertainment/eaelogo.png';
-import { MaidenScorebookData } from './ProjectImageData/MaidenScorebookData';
-import { ColormerizeData } from './ProjectImageData/ColormerizeData';
-import { CryptoData } from './ProjectImageData/CryptoData';
-import { EverAfterData } from './ProjectImageData/EverAfterData.';
+import CastleIcon from '../../images/castle.png';
 
 export const ProjectsData = [
     {
@@ -18,33 +18,37 @@ export const ProjectsData = [
     {
         title: 'Maiden Scorebook',
         image: MaidenImg,
+        icon: MaidenIcon,
         alt: 'Maiden Scorebook',
-        info: "An interactive cricket scorebook that allows you to score games from any device!",
-        data: MaidenScorebookData,
-        link: "https://maidenscorebook.com"
+        info: "An interactive cricket scorebook that allows you to score games from any device",
+        link: "https://affectionate-ardinghelli-2781d3.netlify.app/",
+        github: "https://github.com/davidhill94/Maiden-Scorebook"
     },
     {
-        title: 'Colormerize',
+        title: 'myHub',
         image: colormerize,
-        alt: 'Colormerize',
-        info: "A memory game with two modes and multiple difficulties",
-        data: ColormerizeData,
-        link: "https://splendorous-sundae-769eb0.netlify.app"
+        icon: HubIcon,
+        alt: 'myHub',
+        info: "A hub page that pulls data from multiple APIs to provide News and Weather data, as well as an in-built game center",
+        link: "https://vocal-sopapillas-54312c.netlify.app",
+        github: "https://github.com/davidhill94/HubJs"
     },
     {
         title: 'CryptoTracker',
         image: cryptoLogo,
+        icon: CryptoIcon,
         alt: 'CryptoTracker',
-        info: "An easy way to sort and track your favourite cryptocurrencies",
-        data: CryptoData,
-        link: "https://beautiful-truffle-3f4bd5.netlify.app"
+        info: "A crypto tracker that pulls data from an API allowing you to see your favourite Cryptocurrencies",
+        link: "https://beautiful-truffle-3f4bd5.netlify.app",
+        github: "https://github.com/davidhill94/Cryptocurrency-Dashboard"
     },
     {
         title: 'Ever After Entertainment',
         image: everAferLogo,
+        icon: CastleIcon,
         alt: 'Ever After Entertainment',
         info: "A entertainment company for all your princess party needs",
-        data: EverAfterData,
-        link: "https://chimerical-semifreddo-853a59.netlify.app"
+        link: "https://chimerical-semifreddo-853a59.netlify.app",
+        github: "https://github.com/davidhill94/Ever-After-Entertainment"
     }
 ];

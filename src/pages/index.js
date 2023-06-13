@@ -5,8 +5,8 @@ import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import HeroSection from '../components/HeroSection/HeroSection';
 import Navbar from '../components/Navbar/Navbar';
+import ProjectsHome from '../components/Projects/ProjectsHome/ProjectsHome';
 import { ChapterOne, ChapterThree, ChapterTwo, EndLine } from '../components/PageBreak/PageBreak';
-import Projects from '../components/Projects/Projects';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Skills from '../components/Skills/Skills';
 
@@ -28,7 +28,7 @@ const Home = () => {
           <About />
           <Skills />
           <ChapterTwo />
-          <Projects />
+          <ProjectsHome />
           <ChapterThree />
           <Contact />
           <EndLine />
