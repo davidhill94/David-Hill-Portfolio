@@ -1,6 +1,5 @@
 import React from 'react';
 import { ButtonContainer, CardDescription, DescriptionButtons, DescriptionText } from './ProjectsDescriptionStyling';
-import { ItemText } from '../../Contact/ContactElements';
 
 const ProjectsDescription = ({ item, description, index, clicked }) => {
   return (

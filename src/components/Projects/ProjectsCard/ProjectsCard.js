@@ -1,6 +1,5 @@
 import React from 'react';
 import { CardIcon, CardWrapper, Logo } from './ProjectsCardStyling';
-import minesweeper from '../../../images/minesweeper_logo.png';
 
 const ProjectsCard = ({ handleDescripton, item, index, clicked }) => {
 

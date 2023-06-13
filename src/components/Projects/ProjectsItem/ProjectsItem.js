@@ -1,7 +1,6 @@
-import React from 'react'
-import { ProjectsItemWrapper } from './ProjectsItemStyling'
-import ProjectsCard from '../../Projects/ProjectsCard/ProjectsCard'
-import { CardDescription } from '../../Projects/ProjectsDescription/ProjectsDescriptionStyling';
+import React from 'react';
+import { ProjectsItemWrapper } from './ProjectsItemStyling';
+import ProjectsCard from '../../Projects/ProjectsCard/ProjectsCard';
 import { ProjectsData } from '../ProjectsData';
 import ProjectsDescription from '../../Projects/ProjectsDescription/ProjectsDescription';
 import { useState } from 'react';
