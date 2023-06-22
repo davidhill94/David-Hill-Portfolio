@@ -4,44 +4,52 @@ import { GiCardJoker } from 'react-icons/gi';
 
 export const ContactContainer = styled.div`
 position: relative;
-display: flex;
-flex-direction: column;
-justify-content: center;
+display: grid;
+grid-template-columns: 15% 70% 15%;
+grid-template-rows: 100%;
 align-items: center;
 background-color: var(--primary);
 color: white;
 width: 100%;
-min-height: 70vh;
+min-height: auto;
 font-size: 70px;
 font-family: 'Poppins', sans-serif;
-
 padding: 2rem 0;
 
-@media screen and (max-width: 960px){
-    min-height: 110vh;
-}
-@media screen and (max-width: 550px){
-    min-height: 105vh;
+@media screen and (max-width: 1024px){
+    min-height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+    padding: 0;
 }
 `
 
 export const ContactBackgroundText = styled.div`
-position: absolute;
 font-size: 6rem;
 font-weight: 800;
 color: var(--secondary);
 writing-mode: vertical-rl;
-top: -5%;
-left: -2vw;
 opacity: 0.1;
 pointer-events: none;
+grid-column: 1 / 2;
+display: flex;
+justify-content: center;
+align-items: center;
 
-@media screen and (max-width: 768px){
-    position: static;
+@media screen and (max-width: 1024px){
+    font-size: 5rem;
+    grid-row: 1 / 2;
+    writing-mode: horizontal-tb;
+}
+@media screen and (max-width: 820px), and (min-width: 650px), and (orientation: portrait){
+    font-size: 5rem;
+    grid-row: 1 / 2;
     writing-mode: horizontal-tb;
 }
 @media screen and (max-width: 550px){
-    font-size: 3rem;
+    font-size: 2.5rem;
+    grid-row: 1 / 2;
+    writing-mode: horizontal-tb;
 }
 `
 
@@ -70,12 +78,13 @@ display: flex;
 align-items: center;
 justify-content: center;
 pointer-events: none;
-width: 80%;
-margin-left: 4rem;
+grid-column: 2 / 3;
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1024px){
     flex-direction: column-reverse;
     margin-left: 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 `
 
@@ -83,32 +92,25 @@ export const ContactItems = styled.div`
 display: flex;
 flex-direction: column;
 height: 400px;
-align-items: flex-end;
+max-width: 500px;
+align-items: center;
 justify-content: center;
 text-align: center;
-margin: 0 1rem;
+padding: 0 2rem;
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1024px){
     align-items: center;
 }
 `
 
 export const ContactPreText = styled.p`
-font-size: 1.2rem;
-text-align: flex-end;
-width: 90%;
+font-size: 1rem;
+text-align: start;
+width: 100%;
 
-@media screen and (max-width: 1024px){
-    font-size: 1.1rem;
-}
-@media screen and (max-width: 768px){
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
-}
 @media screen and (max-width: 450px){
     font-size: 0.8rem;
-    padding: 0 1rem;
+    padding: 0 4rem;
 }
 `
 
@@ -121,36 +123,47 @@ height: 60px;
 position: relative;
 
 @media screen and (max-width: 1024px){
-    font-size: 1.1rem;
+    font-size: 1rem;
+    flex-direction: row-reverse;
 }
 @media screen and (max-width: 960px){
-    min-width: 60vw;
-    flex-direction: row-reverse;
+    min-width: 100%;
 }
 @media screen and (max-width: 450px){
     min-width: 90vw;
 }
 `
+export const ItemWrapper = styled.div`
+display: flex;
+flex-direction: column;
+align-items: end;
+justify-content: center;
+width: 100%;
+padding: 0 1rem;
+
+@media screen and (max-width: 1024px){
+    align-items: start;
+    padding: 0;
+}
+
+@media screen and (max-width: 290px){
+    align-items: start;
+}
+`
 
 export const ItemText = styled.p`
-font-size: 1.4rem;
+font-size: 1rem;
 color: var(--secondary);
 margin: 0 24px;
 white-space: nowrap;
 
-@media screen and (max-width: 1024px){
-    font-size: 1.1rem;
-}
-@media screen and (max-width: 960px){
-    font-size: 1rem;
-}
-@media screen and (max-width: 768px){
-    font-size: 1rem;
+@media screen and (max-width: 280px){
+    font-size: 0.8rem;
 }
 `
 
 export const EmailLogo = styled(MdEmail)`
-font-size: 3.5rem;
+font-size: 2.5rem;
 color: var(--secondary);
 background-color: var(--third);
 padding: 6px;
@@ -163,16 +176,13 @@ pointer-events: auto;
     transition: transform 0.1s ease; 
 }
 
-@media screen and (max-width: 1024px){
-    font-size: 3rem;
-}
 @media screen and (max-width: 450px){
     margin-left: 2rem;
 }
 `
 
 export const PhoneLogo = styled(MdPhoneEnabled)`
-font-size: 3.5rem;
+font-size: 2.5rem;
 color: var(--secondary);
 background-color: var(--third);
 padding: 6px;
@@ -184,10 +194,6 @@ pointer-events: auto;
 &:hover {
     transform: scale(1.1);
     transition: transform 0.1s ease; 
-}
-
-@media screen and (max-width: 1024px){
-    font-size: 3rem;
 }
 @media screen and (max-width: 450px){
     margin-left: 2rem;
@@ -195,7 +201,7 @@ pointer-events: auto;
 `
 
 export const LocationLogo = styled(MdLocationOn)`
-font-size: 3.5rem;
+font-size: 2.5rem;
 color: var(--secondary);
 background-color: var(--third);
 padding: 6px;
@@ -206,10 +212,6 @@ pointer-events: auto;
 &:hover {
     transform: scale(1.1);
     transition: transform 0.1s ease; 
-}
-
-@media screen and (max-width: 1024px){
-    font-size: 3rem;
 }
 @media screen and (max-width: 450px){
     margin-left: 2rem;

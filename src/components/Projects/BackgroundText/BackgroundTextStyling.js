@@ -15,5 +15,6 @@ height: 100%;
 
 @media screen and (max-width: 550px){
     writing-mode: horizontal-tb;
+    grid-row: 1 / 2;
 }
 `

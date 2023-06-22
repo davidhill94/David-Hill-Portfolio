@@ -5,10 +5,11 @@
   --primary: #1c1c1c;
   --secondary: #f8f8ff;
   --third: #ff7900;
-  --fourth: #353535;
+  --fourth: #7e8081;
 }
 
 body {
   overflow-x: hidden;
   width: 100%;
+  background-color: var(--primary);
 }

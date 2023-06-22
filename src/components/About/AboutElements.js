@@ -1,52 +1,54 @@
-import styled  from 'styled-components';
+import styled from 'styled-components';
 import { GiCardJoker } from 'react-icons/gi';
 
 export const AboutContainer = styled.div`
 position: relative;
-min-height: 90vh;
+min-height: auto;
 width: 100%;
 background-color: var(--primary);
-display: flex;
-align-items: center;
-justify-content: center;
+display: grid;
+grid-template-columns: 15% 70% 15%;
+grid-template-rows: 100%;
 text-align: center;
 font-family: 'Poppins', sans-serif;
 overflow: hidden;
 z-index: 1;
 padding: 3rem 0;
 
-@media screen and (max-width: 768px){
-    min-height: 140vh;
-    flex-direction: column;
-}
-@media screen and (max-width: 550px){
-    min-height: 130vh;
+@media screen and (max-width: 1024px){
+    min-height: auto;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+    padding: 0;
 }
 `
 
 export const AboutBackgroundText = styled.p`
-position: absolute;
 font-size: 7rem;
 font-weight: 800;
 color: var(--secondary);
 writing-mode: vertical-rl;
-top: 0;
-bottom: 0;
-left: -2vw;
-writing-mode: vertical-rl;
 opacity: 0.1;
 pointer-events: none;
+grid-column: 1 / 2;
+display: flex;
+align-items: center;
+justify-content: center;
 
-@media screen and (max-width: 960px){
-    font-size: 6rem;
-}
-@media screen and (max-width: 768px){
-    font-size: 9rem;
+@media screen and (max-width: 1024px){
+    font-size: 5rem;
+    grid-row: 1 / 2;
     writing-mode: horizontal-tb;
-    position: static;
+}
+@media screen and (max-width: 820px), and (min-width: 650px), and (orientation: portrait){
+    font-size: 5rem;
+    grid-row: 1 / 2;
+    writing-mode: horizontal-tb;
 }
 @media screen and (max-width: 550px){
-    font-size: 3rem;
+    font-size: 2.5rem;
+    grid-row: 1 / 2;
+    writing-mode: horizontal-tb;
 }
 `
 
@@ -68,21 +70,28 @@ opacity: 0.1;
 
 export const AboutWrapper = styled.div`
 display: flex;
-width: 100%;
 align-items: center;
 margin-left: 3rem;
 justify-content: center;
-padding-bottom: 4rem;
 pointer-events: none;
+grid-column: 2 / 3;
 
-@media screen and (max-width: 960px){
-    margin-left: 5rem;
-    padding-bottom: 0;
-}
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     flex-direction: column;
     margin-left: 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+@media screen and (max-width: 820px), and (min-width: 650px), and (orientation: portrait){
+    flex-direction: column;
+    margin-left: 0;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
     padding-bottom: 4rem;
+}
+@media screen and (max-width: 550px){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 `
 
@@ -93,7 +102,6 @@ align-items: center;
 text-align: center;
 height: 400px;
 width: auto;
-margin-left: 2rem;
 border-radius: 5px;
 
 @media screen and (max-width: 960px){
@@ -118,14 +126,11 @@ pointer-events: none;
 height: 400px;
 padding: 1.5rem;
 
-@media screen and (max-width: 960px){
-    width: 23rem;
-}
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     width: 30rem;
     align-items: center;
     margin-top: 2rem;
-    padding: 2rem 1rem;
+    padding: 0 1rem;
 }
 @media screen and (max-width: 550px){
     width: 23rem;
@@ -150,10 +155,7 @@ text-align: start;
 pointer-events: none;
 font-size: 1rem;
 
-@media screen and (max-width: 960px){
-    font-size: 0.9rem;
-}
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     font-size: 1rem;
     text-align: center;
 }

@@ -12,29 +12,27 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-
-@media screen and (max-width: 960px){
-    padding-bottom: 2rem;
-}
+padding-bottom: 2rem;
+width: 100%;
+padding: 0 2rem;
 `
 
 export const Form = styled.form`
 display: flex;
 flex-direction: column;
 font-size: 1rem;
-width: 400px;
+width: 100%;
 height: 400px;
 pointer-events: none;
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 1024px){
     width: 500px;
 }
-@media screen and (max-width: 550px){
-    width: 300px;
-    height: 300px;
+@media screen and (max-width: 768px){
+    width: 100%;
 }
-@media screen and (max-width: 350px){
-    width: 240px;
+@media screen and (max-width: 550px){
+    height: 300px;
 }
 `
 
@@ -108,7 +106,7 @@ height: 30px;
 
 export const SubmitBtn = styled.input`
 display: flex;
-width: 20%;
+width: 100px;
 height: 30px;
 justify-content: center;
 align-items: center;

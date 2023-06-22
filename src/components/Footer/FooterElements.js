@@ -6,7 +6,7 @@ display: grid;
 grid-template-columns: 33% 34% 33%;
 justify-content: center;
 align-items: center;
-background-color: var(--primary);
+background-color: transparent;
 color: black;
 width: 100%;
 height: 20vh;

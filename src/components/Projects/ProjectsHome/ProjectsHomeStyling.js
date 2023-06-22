@@ -7,6 +7,11 @@ background-color: var(--primary);
 display: grid;
 grid-template-rows: 100%;
 grid-template-columns: 15% 70% 15%;
+
+@media screen and (max-width: 550px){
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+}
 `
 
 export const ProjectWrapper = styled.div`
@@ -18,4 +23,9 @@ display: flex;
 align-items: center;
 justify-content: space-around;
 flex-wrap: wrap;
+
+@media screen and (max-width: 550px){
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
 `

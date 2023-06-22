@@ -12,14 +12,12 @@ import {
   SiJquery } from 'react-icons/si'
 import { 
 SkillsContainer,
-SkillsColumn,
 Skill 
 } from './SkillsElements';
 
 const Skills = () => {
   return (
       <SkillsContainer>
-        <SkillsColumn>
           <Skill>
             <FaHtml5 />
           </Skill>
@@ -32,8 +30,6 @@ const Skills = () => {
           <Skill>
             <FaSass />
           </Skill>
-        </SkillsColumn>
-        <SkillsColumn>
           <Skill>
             <SiJavascript />
           </Skill>
@@ -49,7 +45,6 @@ const Skills = () => {
           <Skill>
             <FaNode />
           </Skill>
-        </SkillsColumn>
       </SkillsContainer>
   )
 };

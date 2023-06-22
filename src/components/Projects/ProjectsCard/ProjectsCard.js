@@ -12,11 +12,15 @@ const ProjectsCard = ({ handleDescripton, item, index, clicked }) => {
             >
                 <Logo
                     src={item.image}
-                    alt="minesweeper"></Logo>
+                    alt="minesweeper">
+                    </Logo>
             </CardWrapper>
             :
             <CardWrapper onClick={() => handleDescripton(index)}>
-                <CardIcon src={item.icon} alt="Icon" />
+                <CardIcon 
+                src={item.icon} 
+                alt="Icon"
+                />
             </CardWrapper>
     )
 }
