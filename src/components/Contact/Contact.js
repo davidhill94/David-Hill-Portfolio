@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import { BackgroundSocial } from '../BackgroundSocial/BackgroundSocial';
 import ContactForm from '../ContactForm/ContactForm';
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -36,7 +35,6 @@ const Contact = () => {
 
   return (
       <ContactContainer id="contact">
-        <BackgroundSocial />
         <BackgroundCard />
         <BackgroundText header={"CONTACT"}/>
         <ContactWrapper>
