@@ -81,7 +81,7 @@ width: 100%;
 
 @media screen and (max-width: 450px){
     font-size: 0.8rem;
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
 `
 
@@ -99,9 +99,6 @@ position: relative;
 }
 @media screen and (max-width: 960px){
     min-width: 100%;
-}
-@media screen and (max-width: 450px){
-    min-width: 90vw;
 }
 `
 export const ItemWrapper = styled.div`

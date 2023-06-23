@@ -17,4 +17,7 @@ height: 100%;
     writing-mode: horizontal-tb;
     grid-row: 1 / 2;
 }
+@media screen and (max-width: 550px){
+    font-size: 4rem;
+}
 `

@@ -1,12 +1,10 @@
 
 import MaidenImg from '../../images/MaidenLogo.png';
 import MaidenIcon from '../../images/cricket.png';
-import colormerize from '../../images/colormerize.png';
+import HubLogo from '../../images/hub_logo.png';
 import HubIcon from '../../images/hub.png';
 import cryptoLogo from '../../images/projects/cryptotracker/crypto_logo.png';
 import CryptoIcon from '../../images/crypto.png';
-import everAferLogo from '../../images/projects/EverAfterEntertainment/eaelogo.png';
-import CastleIcon from '../../images/castle.png';
 
 export const ProjectsData = [
     {
@@ -26,7 +24,7 @@ export const ProjectsData = [
     },
     {
         title: 'myHub',
-        image: colormerize,
+        image: HubLogo,
         icon: HubIcon,
         alt: 'myHub',
         info: "A hub page that pulls data from multiple APIs to provide News and Weather data, as well as an in-built game center",
@@ -41,14 +39,5 @@ export const ProjectsData = [
         info: "A crypto tracker that pulls data from an API allowing you to see your favourite Cryptocurrencies",
         link: "https://beautiful-truffle-3f4bd5.netlify.app",
         github: "https://github.com/davidhill94/Cryptocurrency-Dashboard"
-    },
-    {
-        title: 'Ever After Entertainment',
-        image: everAferLogo,
-        icon: CastleIcon,
-        alt: 'Ever After Entertainment',
-        info: "A entertainment company for all your princess party needs",
-        link: "https://chimerical-semifreddo-853a59.netlify.app",
-        github: "https://github.com/davidhill94/Ever-After-Entertainment"
     }
 ];
