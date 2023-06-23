@@ -4,7 +4,7 @@ export const CardDescription = styled.div`
 height: 0;
 width: 200px;
 background-color: var(--secondary);
-border-radius: 0 0 2% 2%;
+border-radius: ${(props) => (props.techClick ? "0" : "0 0 2% 2%")};
 z-index: 2;
 transition: height 0.75s ease, opacity 0.2s ease;
 opacity: 0;
@@ -27,7 +27,7 @@ display: flex;
 align-items: start;
 justify-content: start;
 padding: 1rem 0.5rem;
-font-size: 0.75rem;
+font-size: 0.7rem;
 grid-row: 1 / 2;
 
 &.clicked {
@@ -48,7 +48,23 @@ export const DescriptionButtons = styled.a`
 width: auto;
 padding: 0.25rem;
 color: var(--primary);
-font-size: 0.75rem;
+font-size: 0.7rem;
+background-color: transparent;
+margin: 0.25rem;
+border: 1px solid;
+border-radius: 2px;
+text-decoration: none;
+
+&:hover{
+    background-color: var(--third);
+    color: var(--primary);
+}
+`
+export const DescriptionButtonsAlt = styled.button`
+width: auto;
+padding: 0.25rem;
+color: var(--primary);
+font-size: 0.7rem;
 background-color: transparent;
 margin: 0.25rem;
 border: 1px solid;

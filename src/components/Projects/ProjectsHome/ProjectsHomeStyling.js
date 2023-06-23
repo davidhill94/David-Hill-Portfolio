@@ -8,6 +8,8 @@ display: grid;
 grid-template-rows: 100%;
 grid-template-columns: 15% 70% 15%;
 padding: 1rem 0;
+position: relative;
+font-family: 'Poppins', sans-serif;
 
 @media screen and (max-width: 1024px){
     min-height: auto;

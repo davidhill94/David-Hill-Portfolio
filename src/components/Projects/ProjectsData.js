@@ -20,7 +20,8 @@ export const ProjectsData = [
         alt: 'Maiden Scorebook',
         info: "An interactive cricket scorebook that allows you to score games from any device. The first project I built whilst learning React and Redux.",
         link: "https://affectionate-ardinghelli-2781d3.netlify.app/",
-        github: "https://github.com/davidhill94/Maiden-Scorebook"
+        github: "https://github.com/davidhill94/Maiden-Scorebook",
+        tech: "HTML, Styled Components, Javascript, React"
     },
     {
         title: 'myHub',
@@ -29,7 +30,8 @@ export const ProjectsData = [
         alt: 'myHub',
         info: "A hub page that pulls data from multiple APIs to provide News and Weather information, as well as an in-built game center. I wanted to build a project that showcased many skills all on the same website.",
         link: "https://vocal-sopapillas-54312c.netlify.app",
-        github: "https://github.com/davidhill94/HubJs"
+        github: "https://github.com/davidhill94/HubJs",
+        tech: "HTML, Styled Components, Javascript, React, Redux"
     },
     {
         title: 'CryptoTracker',
@@ -38,6 +40,7 @@ export const ProjectsData = [
         alt: 'CryptoTracker',
         info: "My introduction into APIs - A crypto tracker that pulls data from an API allowing you to see your favourite Cryptocurrencies, and order them in a variery of ways",
         link: "https://beautiful-truffle-3f4bd5.netlify.app",
-        github: "https://github.com/davidhill94/Cryptocurrency-Dashboard"
+        github: "https://github.com/davidhill94/Cryptocurrency-Dashboard",
+        tech: "HTML, CSS, Javascript, React"
     }
 ];

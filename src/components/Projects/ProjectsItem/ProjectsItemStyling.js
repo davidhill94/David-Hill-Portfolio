@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsItemWrapper = styled.div`
-min-height: 140px;
+min-height: 160px;
 width: 200px;
 border-radius: 5px;
 margin: 1rem 1rem;

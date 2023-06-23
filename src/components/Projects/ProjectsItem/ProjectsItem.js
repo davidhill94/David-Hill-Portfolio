@@ -4,11 +4,13 @@ import ProjectsCard from '../../Projects/ProjectsCard/ProjectsCard';
 import { ProjectsData } from '../ProjectsData';
 import ProjectsDescription from '../../Projects/ProjectsDescription/ProjectsDescription';
 import { useState } from 'react';
+import TechStack from '../TechStack/TechStack';
 
 const ProjectsItem = ({ description, setDescription }) => {
 
   const [clicked, setClicked] = useState(null);
   const [hovered, setHovered] = useState(false);
+  const [techClick, setTechClick] = useState(false);
 
   const handleDescripton = (index) => {
     if (!hovered) {
@@ -22,6 +24,11 @@ const ProjectsItem = ({ description, setDescription }) => {
     setHovered(bool)
     setDescription(!description);
     clicked === index ? setClicked(null) : setClicked(index);
+    setTechClick(false);
+  }
+  
+  const handleTechClick = () => {
+    setTechClick(!techClick);
   }
 
   return (
@@ -46,6 +53,14 @@ const ProjectsItem = ({ description, setDescription }) => {
           item={item} 
           clicked={clicked} 
           index={index} 
+          handleTechClick={handleTechClick}
+          techClick={techClick}
+          />
+          <TechStack 
+          item={item}
+          index={index}
+          techClick={techClick}
+          clicked={clicked}
           />
         </ProjectsItemWrapper>
       )
