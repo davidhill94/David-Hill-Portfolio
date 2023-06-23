@@ -13,7 +13,7 @@ grid-template-rows: 75% 25%;
 pointer-events: none;
 
 &.clicked {
-    height: 140px;
+    height: 200px;
     opacity: 1;
     pointer-events: auto;
 }
@@ -31,7 +31,7 @@ font-size: 0.75rem;
 grid-row: 1 / 2;
 
 &.clicked {
-    height: 100px;
+    height: 150px;
     opacity: 1;
 }
 `
