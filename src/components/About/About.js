@@ -23,14 +23,14 @@ const About = () => {
           <ContentWrapper>
             <HeaderText />
             <ContentText>
-            My name is David Hill! I am a self-taught professional Web Developer from the United Kingdom. I went from fixing bodies as a Sports Therapist to fixing functions!
+            My name is David Hill! I am an aspiring self-taught Full Stack Developer from the United Kingdom. I went from fixing bodies as a Sports Therapist to fixing functions!
               
             </ContentText>
             <ContentText>
-            Every morning I wake up with the desire to build 5* web pages and the commitment to design unique solutions for your website needs
+            Every morning I wake up with the desire to expand my skillset and get my breakthrough in the industry. 
             </ContentText>
             <ContentText>
-            I focus on building my websites using React, but behind the scenes I'm always learning and testing new skills. I'm looking for my first breakthrough job as a Developer, who's going to give me a shot?
+            I am currently balancing my love for travelling with my love for coding. It's a hard balance to get right, but each day I find it harder to get off the keyboard no matter how beautiful the waterfall...
             </ContentText>
           </ContentWrapper>
           </AboutWrapper>
