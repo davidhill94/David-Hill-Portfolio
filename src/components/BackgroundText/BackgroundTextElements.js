@@ -13,7 +13,7 @@ align-items: center;
 justify-content: center;
 height: 100%;
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     writing-mode: horizontal-tb;
     grid-row: 1 / 2;
 }
