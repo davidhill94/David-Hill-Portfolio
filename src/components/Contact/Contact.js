@@ -5,7 +5,6 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 import {
 ContactContainer,
-ContactBackgroundText,
 BackgroundCard,
 ContactPreText,
 ContactWrapper,
@@ -18,6 +17,7 @@ LocationLogo,
 CopiedText,
 ItemWrapper
 } from './ContactElements';
+import BackgroundText from '../BackgroundText/BackgroundText';
 
 const Contact = () => {
 
@@ -38,8 +38,7 @@ const Contact = () => {
       <ContactContainer id="contact">
         <BackgroundSocial />
         <BackgroundCard />
-        <ContactBackgroundText>CONTACT
-        </ContactBackgroundText>
+        <BackgroundText header={"CONTACT"}/>
         <ContactWrapper>
           <ContactForm />
           <ContactItems>

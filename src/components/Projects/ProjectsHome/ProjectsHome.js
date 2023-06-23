@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { ProjectsContainer, ProjectWrapper } from './ProjectsHomeStyling';
 import ProjectsItem from '../ProjectsItem/ProjectsItem';
-import BackgroundText from '../BackgroundText/BackgroundText';
+import BackgroundText from '../../BackgroundText/BackgroundText';
 
-const NewProjects = () => {
+const Projects = () => {
 
     const [description, setDescription] = useState(false);
 
     return (
         <ProjectsContainer id="projects">
-            <BackgroundText />
+            <BackgroundText header={"PROJECTS"} />
             <ProjectWrapper>
                 <ProjectsItem description={description} setDescription={setDescription}/>
             </ProjectWrapper>
@@ -17,4 +17,4 @@ const NewProjects = () => {
     )
 }
 
-export default NewProjects
+export default Projects

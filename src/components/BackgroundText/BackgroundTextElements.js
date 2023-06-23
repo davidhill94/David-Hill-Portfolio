@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProjectsBackgroundText = styled.p`
+export const BackgroundHeader = styled.p`
 font-size: 6rem;
 font-weight: 800;
 color: var(--secondary);
@@ -10,11 +10,14 @@ pointer-events: none;
 grid-column: 1 / 2;
 display: flex;
 align-items: center;
-justify-content: start;
+justify-content: center;
 height: 100%;
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 1024px){
     writing-mode: horizontal-tb;
     grid-row: 1 / 2;
+}
+@media screen and (max-width: 550px){
+    font-size: 4rem;
 }
 `
