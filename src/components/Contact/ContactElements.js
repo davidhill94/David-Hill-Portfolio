@@ -24,35 +24,6 @@ padding: 2rem 0;
 }
 `
 
-export const ContactBackgroundText = styled.div`
-font-size: 6rem;
-font-weight: 800;
-color: var(--secondary);
-writing-mode: vertical-rl;
-opacity: 0.1;
-pointer-events: none;
-grid-column: 1 / 2;
-display: flex;
-justify-content: center;
-align-items: center;
-
-@media screen and (max-width: 1024px){
-    font-size: 5rem;
-    grid-row: 1 / 2;
-    writing-mode: horizontal-tb;
-}
-@media screen and (max-width: 820px), and (min-width: 650px), and (orientation: portrait){
-    font-size: 5rem;
-    grid-row: 1 / 2;
-    writing-mode: horizontal-tb;
-}
-@media screen and (max-width: 550px){
-    font-size: 2.5rem;
-    grid-row: 1 / 2;
-    writing-mode: horizontal-tb;
-}
-`
-
 export const BackgroundCard = styled(GiCardJoker)`
 position: absolute;
 bottom: -30%;
