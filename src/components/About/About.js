@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
   AboutContainer,
-  AboutBackgroundText,
   BackgroundCard,
   AboutWrapper,
   AboutImage,
