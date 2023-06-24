@@ -18,7 +18,7 @@ import {
 
 const ContactForm = () => {
 
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState("false");
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -28,12 +28,12 @@ const ContactForm = () => {
         }).catch(err => console.log(err));
         e.target.reset();
 
-        setActive(!active);
+        setActive("true");
     }
 
     useEffect(() => {
         setTimeout(() => {
-            setActive(false)
+            setActive("false")
         }, 6000);
         
     })

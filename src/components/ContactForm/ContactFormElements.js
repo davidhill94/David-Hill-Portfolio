@@ -1,5 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const ContactFormContainer = styled.div`
 display: flex;
@@ -123,7 +123,7 @@ export const SubmitText = styled(FaCheckCircle)`
 font-size: 4rem;
 color: var(--third);
 height: 30px;
-opacity: ${(props) => (props.active ? "1" : "0")};
+opacity: ${(props) => (props.active === "true" ? "1" : "0")};
 display: flex;
 align-items: center;
 justify-content: center;
