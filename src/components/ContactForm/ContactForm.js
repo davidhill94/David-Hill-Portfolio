@@ -23,7 +23,7 @@ const ContactForm = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_ymjflz8", "template_1g4s60q", e.target, "user_sWUq5Ae8VbeTY2NDEEjKd").then(res => {
+        emailjs.sendForm("service_62fn8ap", "template_1g4s60q", e.target, "user_sWUq5Ae8VbeTY2NDEEjKd").then(res => {
             console.log(res);
         }).catch(err => console.log(err));
         e.target.reset();
@@ -54,7 +54,7 @@ const ContactForm = () => {
               <FormItem></FormItem>
               <SumbitItem>
               <SubmitBtn type="submit" value="Send" />
-              <SubmitText active={active}>Sent!</SubmitText>
+              <SubmitText active={active} />
               </SumbitItem>
           </Form>
       </ContactFormContainer>

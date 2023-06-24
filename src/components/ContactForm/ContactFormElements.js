@@ -1,11 +1,5 @@
+import { FaCheckCircle } from "react-icons/fa";
 import styled, { keyframes } from "styled-components";
-
-const submitAnimation = keyframes`
-0% { width: 0; font-size: 0rem; }
-25% { width: 60px; font-size: 1rem; }
-75% { width: 60px; font-size: 1rem; }
-100% { width: 0px; font-size: 0rem; }
-`
 
 export const ContactFormContainer = styled.div`
 display: flex;
@@ -125,24 +119,17 @@ color: var(--primary);
 }
 `
 
-export const SubmitText = styled.p`
-font-size: 1rem;
-width: ${(props) => (props.active ? '60px' : '0px')};
+export const SubmitText = styled(FaCheckCircle)`
+font-size: 4rem;
+color: var(--third);
 height: 30px;
-background-color: var(--third);
-color: var(--secondary);
-border-radius: 3px;
-display: ${(props) => (props.active ? 'flex' : 'none')};
+opacity: ${(props) => (props.active ? "1" : "0")};
+display: flex;
 align-items: center;
 justify-content: center;
 margin-left: 48px;
-transition: all 0.5s ease;
-animation-name: ${submitAnimation};
-animation-duration: 3s;
-animation-fill-mode: forwards;
-pointer-events: auto;
 
 @media screen and (max-width: 550px){
-    font-size: 0.9rem;
+    font-size: 1.2rem;
 }
 `

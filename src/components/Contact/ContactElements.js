@@ -187,7 +187,11 @@ pointer-events: auto;
 `
 
 export const CopiedText = styled.div`
-display: ${(props) => (props.email || props.phone || props.location ? 'flex' : 'none')};
-font-size: 1.2rem;
+display: flex;
+font-size: 2.5rem;
 color: var(--third);
+
+@media screen and (max-width: 450px){
+    margin-left: 2rem;
+}
 `
