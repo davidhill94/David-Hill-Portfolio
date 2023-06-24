@@ -14,6 +14,7 @@ min-height: auto;
 font-size: 70px;
 font-family: 'Poppins', sans-serif;
 padding: 2rem 0;
+z-index: 1;
 
 @media screen and (max-width: 1024px){
     min-height: auto;
@@ -51,6 +52,9 @@ padding: 0 2rem;
 @media screen and (max-width: 1024px){
     align-items: center;
 }
+@media screen and (max-width: 330px){
+    padding: 0;
+}
 `
 
 export const ContactPreText = styled.p`
@@ -61,6 +65,9 @@ width: 100%;
 @media screen and (max-width: 450px){
     font-size: 0.8rem;
     padding: 0 2rem;
+}
+@media screen and (max-width: 330px){
+    padding: 0 1rem;
 }
 `
 
@@ -104,6 +111,9 @@ color: var(--secondary);
 margin: 0 24px;
 white-space: nowrap;
 
+@media screen and (max-width: 360px){
+    margin: 0 12px;
+}
 @media screen and (max-width: 280px){
     font-size: 0.8rem;
 }
@@ -124,7 +134,7 @@ pointer-events: auto;
 }
 
 @media screen and (max-width: 450px){
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 `
 
@@ -143,7 +153,7 @@ pointer-events: auto;
     transition: transform 0.1s ease; 
 }
 @media screen and (max-width: 450px){
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 `
 
@@ -161,7 +171,7 @@ pointer-events: auto;
     transition: transform 0.1s ease; 
 }
 @media screen and (max-width: 450px){
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 `
 
@@ -171,6 +181,6 @@ font-size: 2.5rem;
 color: var(--third);
 
 @media screen and (max-width: 450px){
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 `

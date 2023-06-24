@@ -4,9 +4,9 @@ const patternOne = keyframes`
 0% { transform: translateX(-20vw) translateY(-10vh); }
 20% { transform: translateX(10vw) translateY(30vh); }
 40% { transform: translateX(-20vw) translateY(60vh); }
-60% { transform: translateX(120vw) translateY(90vh); }
+60% { transform: translateX(120vw) translateY(75vh); }
 80% { transform: translateX(-20vw) translateY(10vh); }
-100% { transform: translateX(120vw) translateY(90vh); }
+100% { transform: translateX(120vw) translateY(67vh); }
 `
 
 

@@ -50,7 +50,7 @@ const Contact = () => {
         <ContactForm />
         <ContactItems>
           <ContactItem>
-            <ContactPreText>I am always looking to bring your ideas into reality! Don't hesitate to get in contact with me.</ContactPreText>
+            <ContactPreText>For all enquiries please contact me below - I would love to hear from you.</ContactPreText>
           </ContactItem>
           <ItemWrapper>
             <ContactItem>

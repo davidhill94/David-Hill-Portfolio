@@ -12,6 +12,7 @@ position: relative;
 font-family: 'Poppins', sans-serif;
 place-items: center;
 overflow: hidden;
+z-index: 1;
 
 @media screen and (max-width: 1024px){
     min-height: auto;
