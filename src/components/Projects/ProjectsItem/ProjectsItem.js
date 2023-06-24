@@ -21,10 +21,12 @@ const ProjectsItem = ({ description, setDescription }) => {
   }
 
   const handleHover = (bool, index) => {
+    if(window.innerWidth > 1024){
     setHovered(bool)
     setDescription(!description);
     clicked === index ? setClicked(null) : setClicked(index);
     setTechClick(false);
+    }
   }
   
   const handleTechClick = () => {
