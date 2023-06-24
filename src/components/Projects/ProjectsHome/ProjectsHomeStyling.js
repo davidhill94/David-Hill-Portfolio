@@ -20,7 +20,7 @@ font-family: 'Poppins', sans-serif;
 
 export const ProjectWrapper = styled.div`
 width: 100%;
-min-height: 100%;
+height: auto;
 padding: 3rem;
 grid-column: 2 / 3;
 display: flex;
