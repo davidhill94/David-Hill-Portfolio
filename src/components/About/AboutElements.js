@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { GiCardJoker } from 'react-icons/gi';
 
 export const AboutContainer = styled.div`
 position: relative;
 min-height: auto;
 width: 100%;
-background-color: var(--primary);
+background-color: transparent;
 display: grid;
 grid-template-columns: 15% 70% 15%;
 grid-template-rows: 100%;
@@ -20,22 +19,6 @@ padding: 3rem 0;
     grid-template-columns: 100%;
     grid-template-rows: 15% 85%;
     padding: 0;
-}
-`
-
-export const BackgroundCard = styled(GiCardJoker)`
-position: absolute;
-bottom: -10%;
-right: -5%;
-font-size: 20rem;
-display: flex;
-transform: rotate(10deg);
-pointer-events: none;
-color: #fff;
-opacity: 0.1;
-
-@media screen and (max-width: 550px){
-    font-size: 10rem;
 }
 `
 

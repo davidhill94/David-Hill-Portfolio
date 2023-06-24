@@ -1,8 +1,8 @@
 import styled, { keyframes } from "styled-components";
 
 const patternOne = keyframes`
-0% { transform: translateX(-20vw) translateY(30vh); }
-20% { transform: translateX(120vw) translateY(00vh); }
+0% { transform: translateX(-20vw) translateY(-10vh); }
+20% { transform: translateX(10vw) translateY(30vh); }
 40% { transform: translateX(-20vw) translateY(60vh); }
 60% { transform: translateX(120vw) translateY(90vh); }
 80% { transform: translateX(-20vw) translateY(10vh); }
@@ -18,12 +18,13 @@ position: absolute;
 top: 0;
 left: 0;
 z-index: -1;
+overflow: hidden;
 `
 
 export const IconContainer = styled.div`
 display: flex;
 animation-name: ${patternOne};
-animation-duration: 180s;
+animation-duration: 60s;
 animation-fill-mode: forwards;
 animation-iteration-count: infinite;
 animation-timing-function: linear;
@@ -32,7 +33,7 @@ align-items: center;
 justify-content: center;
 position: absolute;
 left: -15vw;
-top: 0vw;
+top: -15vh;
 min-width: 300px;
 
 &:nth-child(1) {

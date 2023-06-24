@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { MdEmail, MdPhoneEnabled, MdLocationOn } from 'react-icons/md';
-import { GiCardJoker } from 'react-icons/gi';
 
 export const ContactContainer = styled.div`
 position: relative;
@@ -21,26 +20,6 @@ padding: 2rem 0;
     grid-template-columns: 100%;
     grid-template-rows: 15% 85%;
     padding: 0;
-}
-`
-
-export const BackgroundCard = styled(GiCardJoker)`
-position: absolute;
-bottom: -30%;
-margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-text-align: center;
-font-size: 20rem;
-display: flex;
-transform: rotate(10deg);
-opacity: 0.1;
-pointer-events: none;
-
-@media screen and (max-width: 550px){
-    bottom: -20%;
-    font-size: 10rem;
 }
 `
 

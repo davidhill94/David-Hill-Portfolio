@@ -4,7 +4,6 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 import {
   ContactContainer,
-  BackgroundCard,
   ContactPreText,
   ContactWrapper,
   ContactItems,
@@ -17,6 +16,7 @@ import {
   ItemWrapper
 } from './ContactElements';
 import BackgroundText from '../BackgroundText/BackgroundText';
+import BackgroundCard from '../BackgroundCard/BackgroundCard';
 
 const Contact = () => {
 
@@ -44,8 +44,8 @@ const Contact = () => {
 
   return (
     <ContactContainer id="contact">
-      <BackgroundCard />
       <BackgroundText header={"CONTACT"} />
+      <BackgroundCard left={"50%"} right={"50%"} rotate={"10deg"} bottom={"-45%"} mobile={"-20%"} translate={"-50%"} />
       <ContactWrapper>
         <ContactForm />
         <ContactItems>

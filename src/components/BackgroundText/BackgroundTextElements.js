@@ -20,4 +20,7 @@ height: 100%;
 @media screen and (max-width: 550px){
     font-size: 4rem;
 }
+@media screen and (max-width: 360px){
+    font-size: 2rem;
+}
 `

@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
   AboutContainer,
-  BackgroundCard,
   AboutWrapper,
   AboutImage,
   ContentWrapper,
@@ -11,13 +10,14 @@ import HeaderText from './HeaderText';
 import { BackgroundSocial } from '../BackgroundSocial/BackgroundSocial';
 import ProfileImage from '../../images/profile-image3.jpg';
 import BackgroundText from '../BackgroundText/BackgroundText';
+import BackgroundCard from '../BackgroundCard/BackgroundCard';
 
 const About = () => {
   return (
       <AboutContainer id="about">
           <BackgroundSocial />
           <BackgroundText header={"ABOUT"} />
-          <BackgroundCard />
+          <BackgroundCard left={"95%"} right={"0%"} rotate={"10deg"} bottom={"-10%"} mobile={"0%"} translate={"-50%"}/>
           <AboutWrapper>
           <AboutImage src={ProfileImage} alt="Profile Picture"></AboutImage>
           <ContentWrapper>
