@@ -21,7 +21,7 @@ export const ProjectsData = [
         info: "An interactive cricket scorebook that allows you to score games from any device. The first project I built whilst learning React and Redux.",
         link: "https://affectionate-ardinghelli-2781d3.netlify.app/",
         github: "https://github.com/davidhill94/Maiden-Scorebook",
-        tech: "HTML, Styled Components, Javascript, React"
+        tech: "HTML, Styled Components, Javascript, React, Redux"
     },
     {
         title: 'myHub',
@@ -31,7 +31,7 @@ export const ProjectsData = [
         info: "A hub page that pulls data from multiple APIs to provide News and Weather information, as well as an in-built game center. I wanted to build a project that showcased many skills all on the same website.",
         link: "https://vocal-sopapillas-54312c.netlify.app",
         github: "https://github.com/davidhill94/HubJs",
-        tech: "HTML, Styled Components, Javascript, React, Redux"
+        tech: "HTML, Styled Components, Javascript, React"
     },
     {
         title: 'CryptoTracker',
