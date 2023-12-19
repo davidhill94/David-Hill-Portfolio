@@ -62,19 +62,19 @@ const Contact = () => {
               }
             </ContactItem>
             <ContactItem>
-              <ItemText>+642902097546</ItemText>
+              <ItemText>+44818285945</ItemText>
               {phone ?
                 <CopiedText phone={phone}><FaCheckCircle /></CopiedText>
                 :
-                <PhoneLogo onClick={() => { navigator.clipboard.writeText('+44 7956417592'); setPhone(!phone) }} />
+                <PhoneLogo onClick={() => { navigator.clipboard.writeText('+44818285945'); setPhone(!phone) }} />
               }
             </ContactItem>
             <ContactItem>
-              <ItemText>Wellington, New Zealand</ItemText>
+              <ItemText>Lincoln, United Kingdom</ItemText>
               {location ?
                 <CopiedText location={location}><FaCheckCircle /></CopiedText>
                 :
-                <LocationLogo onClick={() => { navigator.clipboard.writeText('Wellington, New Zealand'); setLocation(!location) }} />
+                <LocationLogo onClick={() => { navigator.clipboard.writeText('Lincoln, United Kingdom'); setLocation(!location) }} />
               }
             </ContactItem>
           </ItemWrapper>
