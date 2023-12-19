@@ -2,14 +2,16 @@ import React from 'react';
 import { 
   FaHtml5, 
   FaCss3, 
-  FaBootstrap, 
-  FaSass, 
   FaReact, 
   FaNode } from 'react-icons/fa';
 import { 
   SiJavascript, 
   SiRedux,
-  SiJquery } from 'react-icons/si'
+  SiJquery,
+  SiMongodb,
+  SiTailwindcss,
+  SiNextdotjs
+ } from 'react-icons/si'
 import { 
 SkillsContainer,
 Skill 
@@ -25,12 +27,6 @@ const Skills = () => {
             <FaCss3 />
           </Skill>
           <Skill>
-            <FaBootstrap />
-          </Skill>
-          <Skill>
-            <FaSass />
-          </Skill>
-          <Skill>
             <SiJavascript />
           </Skill>
           <Skill>
@@ -44,6 +40,15 @@ const Skills = () => {
           </Skill>
           <Skill>
             <FaNode />
+          </Skill>
+          <Skill>
+            <SiMongodb />
+          </Skill>
+          <Skill>
+            <SiTailwindcss />
+          </Skill>
+          <Skill>
+            <SiNextdotjs />
           </Skill>
       </SkillsContainer>
   )
