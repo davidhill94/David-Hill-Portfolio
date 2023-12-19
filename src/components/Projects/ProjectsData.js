@@ -5,6 +5,8 @@ import HubLogo from '../../images/hub_logo.png';
 import HubIcon from '../../images/hub.png';
 import cryptoLogo from '../../images/crypto_logo.png';
 import CryptoIcon from '../../images/crypto.png';
+import MonitorrLogo from '../../images/Monitorr_square.png';
+import MonitorrIcon from '../../images/exercise.png';
 
 export const ProjectsData = [
     {
@@ -42,5 +44,15 @@ export const ProjectsData = [
         link: "https://beautiful-truffle-3f4bd5.netlify.app",
         github: "https://github.com/davidhill94/Cryptocurrency-Dashboard",
         tech: "HTML, CSS, Javascript, React"
+    },
+    {
+        title: 'Monitorr Exercise Tracker',
+        image: MonitorrLogo,
+        icon: MonitorrIcon,
+        alt: 'Moniorr Exercise Tracker',
+        info: "My inaugural full stack project — a dynamic exercise tracker app. Crafted with the MERN stack and stylized using Tailwind, it offers an immersive experience in tracking workouts and fitness progress.",
+        link: "https://shimmering-mandazi-bf55f7.netlify.app",
+        github: "https://github.com/davidhill94/Monitorr-Exercise-Tracker",
+        tech: "Javascript, React, TailwindCSS, Node.js, Express.js, MongoDB"
     }
 ];

@@ -5,10 +5,10 @@ import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import HeroSection from '../components/HeroSection/HeroSection';
 import Navbar from '../components/Navbar/Navbar';
-import ProjectsHome from '../components/Projects/ProjectsHome/ProjectsHome';
 import { ChapterOne, ChapterThree, ChapterTwo, EndLine } from '../components/PageBreak/PageBreak';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Skills from '../components/Skills/Skills';
+import Projects from '../components/Projects/ProjectsHome/ProjectsHome';
 
 
 
@@ -28,7 +28,7 @@ const Home = () => {
           <About />
           <Skills />
           <ChapterTwo />
-          <ProjectsHome />
+          <Projects />
           <ChapterThree />
           <Contact />
           <EndLine />
