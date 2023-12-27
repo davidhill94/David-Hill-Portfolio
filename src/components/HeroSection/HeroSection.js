@@ -8,12 +8,10 @@ import {
 } from './HeroElements';
 import image from '../../images/background-img-hero.png';
 import text from '../../images/background-text-hero.png';
-import { BackgroundSocial } from '../BackgroundSocial/BackgroundSocial';
 
 const HeroSection = () => {
   return (
   <HeroContainer>
-      <BackgroundSocial />
       <BackgroundTextTop>DA</BackgroundTextTop>
       <BackgroundTextBottom>VID</BackgroundTextBottom>
       <HeroImage src={image} href="hero"/>

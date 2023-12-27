@@ -4,7 +4,6 @@ import ProjectsItem from '../ProjectsItem/ProjectsItem';
 import BackgroundText from '../../BackgroundText/BackgroundText';
 import TechStack from '../TechStack/TechStack';
 import BackgroundCard from '../../BackgroundCard/BackgroundCard';
-import { BackgroundSocial } from '../../BackgroundSocial/BackgroundSocial';
 
 const Projects = () => {
 
@@ -13,7 +12,6 @@ const Projects = () => {
     return (
         <ProjectsContainer id="projects">
             <BackgroundText header={"PROJECTS"} />
-            <BackgroundSocial />
             <BackgroundCard left={"95%"} right={"0%"} rotate={"10deg"} bottom={"-10%"} mobile={"0%"} translate={"-50%"}/>
             <ProjectWrapper>
                 <ProjectsItem description={description} setDescription={setDescription}/>
