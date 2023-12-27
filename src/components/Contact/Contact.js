@@ -62,11 +62,11 @@ const Contact = () => {
               }
             </ContactItem>
             <ContactItem>
-              <ItemText>+44818285945</ItemText>
+              <ItemText>+447818285945</ItemText>
               {phone ?
                 <CopiedText phone={phone}><FaCheckCircle /></CopiedText>
                 :
-                <PhoneLogo onClick={() => { navigator.clipboard.writeText('+44818285945'); setPhone(!phone) }} />
+                <PhoneLogo onClick={() => { navigator.clipboard.writeText('+447818285945'); setPhone(!phone) }} />
               }
             </ContactItem>
             <ContactItem>
