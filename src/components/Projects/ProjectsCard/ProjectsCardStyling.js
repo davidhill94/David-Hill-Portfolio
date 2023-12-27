@@ -11,6 +11,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 cursor: pointer;
+
+&:hover{
+    background-color: var(--third);
+}
 `
 
 export const Logo = styled.img`
