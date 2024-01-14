@@ -87,6 +87,11 @@ height: auto;
 z-index: 20;
 pointer-events: none;
 
+@media screen and (min-width: 1024px) {
+    right: 0;
+    width: 45%;
+}
+
 @media screen and (max-width: 960px) {
     right: 0;
     width: 32rem;
@@ -116,6 +121,11 @@ height: auto;
 width: 22rem;
 z-index: 2;
 pointer-events: none;
+
+@media screen and (min-width: 1024px) {
+    width: 32rem;
+    top: 30%;
+}
 
 @media screen and (max-width: 960px) {
     width: 20rem;
