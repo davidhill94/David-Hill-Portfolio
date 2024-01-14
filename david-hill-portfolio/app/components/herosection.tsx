@@ -6,12 +6,12 @@ const HeroSection = () => {
   return (
     <div
       id="hero"
-      className="flex w-full flex-col md:flex-row md:min-h-[80vh] lg:min-h-[95vh] xl:min-h-[100vh] bg-primary relative md:-mt-[80px] mt-[80px] overflow-hidden"
+      className="flex w-full flex-col md:flex-row h-[750px] md:h-[650px] lg:min-h-[850px] xl:min-h-[100vh] bg-primary relative md:-mt-[80px] mt-[80px] overflow-hidden"
     >
-      <h2 className="opacity-10 hidden md:flex md:text-[200px] lg:text-[400px] h-[100px] md:h-[150px] lg:h-[300px] items-center justify-center text-secondary absolute top-0 right-0 font-extrabold pointer-events-none">
+      <h2 className="opacity-10 hidden md:flex md:text-[200px] lg:text=[300px] xl:text-[400px] h-[100px] lg:h-[300px] items-center justify-center text-secondary absolute top-0 right-0 font-extrabold pointer-events-none">
         DA
       </h2>
-      <h2 className="opacity-10 hidden md:flex md:text-[200px] lg:text-[400px] h-[100px] md:h-[150px] lg:h-[300px] items-center justify-center text-secondary absolute bottom-0 left-0 font-extrabold pointer-events-none">
+      <h2 className="opacity-10 hidden md:flex md:text-[200px] lg:text=[300px] xl:text-[400px] h-[100px] lg:h-[300px] items-center justify-center text-secondary absolute bottom-0 left-0 font-extrabold pointer-events-none">
         VID
       </h2>
       <div className="w-full md:w-1/2 flex items-center justify-center relative">
