@@ -21,10 +21,32 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       padding: {
-        sectionV: "4rem",
+        sectionV: "1rem",
+        sectionVSm: "2rem",
+        sectionVXl: "3rem",
         sectionH: "1rem",
         sectionHSm: "1.5rem",
         sectionHXl: "5rem",
+      },
+      gridTemplateColumns: {
+        "aboutLg": "15% 70% 15%",
+        "aboutMb": "100%",
+      },
+      gridTemplateRows:{
+        aboutLg: "100%",
+        aboutMb: "auto auto"
+      },
+      keyframes: {
+        wiggle: {
+          '0%': { transform: 'rotate(deg) translateY(0)', color: '#f8f8ff' },
+          '25%': { transform: 'rotate(5deg) translateY(-10px)' },
+          '50%': { transform: 'translateY(-0px)' },
+          '75%': { transform: 'rotate(-5deg) translateY(-10px)' },
+          '100%': { transform: 'rotate(0deg) translateY(0)', color: '#f8f8ff' },
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
       }
     },
   },

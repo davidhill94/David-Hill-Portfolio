@@ -1,5 +1,5 @@
 const Skills = () => {
-    return ( <div>Skills</div> );
+    return ( <div className="bg-secondary">Skills</div> );
 }
  
 export default Skills;

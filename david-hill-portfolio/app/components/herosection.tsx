@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div
       id="hero"
-      className="flex w-full flex-col md:flex-row h-[750px] md:h-[650px] lg:min-h-[850px] xl:min-h-[100vh] bg-primary relative md:-mt-[80px] mt-[80px] overflow-hidden"
+      className="flex w-full flex-col md:flex-row h-[750px] md:h-[650px] lg:min-h-[850px] xl:min-h-[100vh] bg-primary relative md:-mt-[80px] mt-[80px]"
     >
       <h2 className="opacity-10 hidden md:flex md:text-[200px] lg:text=[300px] xl:text-[400px] h-[100px] lg:h-[300px] items-center justify-center text-secondary absolute top-0 right-0 font-extrabold pointer-events-none">
         DA

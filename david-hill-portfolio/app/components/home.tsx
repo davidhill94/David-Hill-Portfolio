@@ -1,8 +1,6 @@
 "use client";
 
 import React, {useState} from 'react';
-import Sidebar from './sidebar';
-import Navbar from './navbar';
 import HeroSection from './herosection';
 import About from './about';
 import Skills from './skills';
