@@ -1,9 +1,8 @@
 "use client";
-import { useState } from "react";
+
 import BackgroundCard from "../backgroundCard";
 import SectionHeader from "../sectionHeader";
 import ProjectsItem from "./projectsItem";
-import TechStack from "./techStack";
 
 const Projects = () => {
 
