@@ -37,7 +37,7 @@ const config: Config = {
         aboutMb: "auto auto"
       },
       boxShadow: {
-        card: "box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);",
+        card: "box-shadow: 0px 20px 50px rgba(58,58,58,0.4);",
       },
       keyframes: {
         wiggle: {
