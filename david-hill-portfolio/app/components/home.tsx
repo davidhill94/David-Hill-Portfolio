@@ -1,8 +1,8 @@
 import React from 'react';
 import HeroSection from './herosection';
-import About from './about';
+import About from './about/about';
 import Skills from './skills/skills';
-import Projects from './projects';
+import Projects from './projects/projects';
 import Contact from './contact';
 import Footer from './footer';
 

@@ -36,6 +36,9 @@ const config: Config = {
         aboutLg: "100%",
         aboutMb: "auto auto"
       },
+      boxShadow: {
+        card: "box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);",
+      },
       keyframes: {
         wiggle: {
           '0%': { transform: 'rotate(deg) translateY(0)', color: '#f8f8ff' },
