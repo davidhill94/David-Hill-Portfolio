@@ -9,7 +9,7 @@ const About = () => {
   return (
 <div
   id="about"
-  className="bg-primary w-full h-fit lg:h-min grid grid-cols-aboutMb grid-rows-aboutMb lg:grid-rows-aboutLg lg:grid-cols-aboutLg py-sectionV sm:py-sectionVSm xl:py-sectionVXl relative overflow-hidden"
+  className="bg-primary w-full h-fit lg:h-min grid grid-cols-wrapperMb grid-rows-wrapperMb lg:grid-rows-wrapperLg lg:grid-cols-wrapperLg py-sectionV sm:py-sectionVSm xl:py-sectionVXl relative overflow-hidden"
 >
   <div className="col-start-1 row-start-1 col-span-1 row-span-1 min-h-auto lg:h-[600px] w-full flex items-center justify-center">
     <SectionHeader header="About" />

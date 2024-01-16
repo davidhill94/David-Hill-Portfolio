@@ -3,8 +3,8 @@ import HeroSection from './herosection';
 import About from './about/about';
 import Skills from './skills/skills';
 import Projects from './projects/projects';
-import Contact from './contact';
 import Footer from './footer';
+import Contact from './contact/contact';
 
 
 const Home = () => {

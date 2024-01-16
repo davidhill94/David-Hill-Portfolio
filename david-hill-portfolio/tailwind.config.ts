@@ -29,12 +29,12 @@ const config: Config = {
         sectionHXl: "5rem",
       },
       gridTemplateColumns: {
-        "aboutLg": "15% 70% 15%",
-        "aboutMb": "100%",
+        wrapperLg: "15% 70% 15%",
+        wrapperMb: "100%",
       },
       gridTemplateRows:{
-        aboutLg: "100%",
-        aboutMb: "auto auto"
+        wrapperLg: "100%",
+        wrapperMb: "auto auto"
       },
       boxShadow: {
         card: "box-shadow: 0px 20px 50px rgba(58,58,58,0.4);",
