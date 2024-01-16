@@ -1,9 +1,7 @@
-"use client";
-
-import React, {useState} from 'react';
+import React from 'react';
 import HeroSection from './herosection';
 import About from './about';
-import Skills from './skills';
+import Skills from './skills/skills';
 import Projects from './projects';
 import Contact from './contact';
 import Footer from './footer';
