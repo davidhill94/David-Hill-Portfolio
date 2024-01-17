@@ -38,7 +38,7 @@ export const ProjectsData = [
         icon: HubIcon,
         iconAlt: "image: Flaticon.com",
         alt: 'myHub',
-        info: "A hub page that pulls data from multiple APIs to provide News and Weather information, as well as an in-built game center. I wanted to build a project that showcased many skills all on the same website.",
+        info: "Explore my hub page – a dynamic project integrating News, Weather, and an interactive game center, showcasing a range of skills. Find real-time information and enjoy my collection of JavaScript games, all conveniently accessible on one platform",
         link: "https://vocal-sopapillas-54312c.netlify.app",
         github: "https://github.com/davidhill94/HubJs",
         tech: "HTML, Styled Components, Javascript, React"
@@ -49,7 +49,7 @@ export const ProjectsData = [
         icon: CryptoIcon,
         iconAlt: "image: Flaticon.com",
         alt: 'CryptoTracker',
-        info: "My introduction into APIs - A crypto tracker that pulls data from an API allowing you to see your favourite Cryptocurrencies, and order them in a variery of ways",
+        info: "Explore my cryptocurrency tracker – a vibrant project that marks my entry into the world of APIs. Get real-time insights into your favorite cryptocurrencies. A simple yet dynamic website designed to keep you informed and engaged with the ever-evolving crypto landscape.",
         link: "https://beautiful-truffle-3f4bd5.netlify.app",
         github: "https://github.com/davidhill94/Cryptocurrency-Dashboard",
         tech: "HTML, CSS, Javascript, React"
