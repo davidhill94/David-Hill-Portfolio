@@ -11,7 +11,7 @@ const HeroSection = () => {
       <h2 className="opacity-10 hidden md:flex md:text-[200px] lg:text=[300px] xl:text-[400px] h-[100px] lg:h-[300px] items-center justify-center text-secondary absolute top-0 right-0 font-extrabold pointer-events-none">
         DA
       </h2>
-      <h2 className="opacity-10 hidden md:flex md:text-[200px] lg:text=[300px] xl:text-[400px] h-[100px] lg:h-[300px] items-center justify-center text-secondary absolute bottom-0 left-0 font-extrabold pointer-events-none">
+      <h2 className="opacity-10 hidden md:flex md:text-[200px] lg:text=[300px] xl:text-[400px] h-[150px] lg:h-[300px] items-center justify-center text-secondary absolute bottom-0 left-0 font-extrabold pointer-events-none">
         VID
       </h2>
       <div className="w-full md:w-1/2 flex items-center justify-center relative">
