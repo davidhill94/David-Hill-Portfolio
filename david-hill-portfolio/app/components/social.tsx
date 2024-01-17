@@ -1,11 +1,15 @@
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
-const Social = () => {
+interface SocialProps{
+  large?: boolean
+}
 
-    const hoverIcon = "hover:text-tertiary text-2xl transition hover:scale(105)";
+const Social: React.FC<SocialProps> = ({ large }) => {
+
+    const hoverIcon = `hover:text-tertiary ${large ? "hover:scale-105 text-3xl" : "hover:scale-105 text-2xl"} transition`;
 
     return ( 
-        <div className="flex items-center justify-center gap-2 text-xl text-secondary">
+        <div className="flex items-center justify-center gap-2 text-secondary">
             <a
               className={`${hoverIcon}`}
               href="//www.facebook.com/profile.php?id=675129624"
