@@ -8,7 +8,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: ["400", "700", "900"] })
 
 export const metadata: Metadata = {
   title: 'David Hill Portfolio',
-  description: 'Welcome to the Portfolio of David Hill, Front End Web Developer',
+  description: 'Welcome to the Portfolio of David Hill, aspiring Full Stack Developer',
 }
 
 export default function RootLayout({
