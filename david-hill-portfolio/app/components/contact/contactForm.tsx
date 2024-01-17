@@ -44,7 +44,7 @@ const ContactForm = () => {
               <textarea name="message" rows={6} className="w-full text-primary px-2 py-1" />
               </div>
               <div className="flex items-center justify-start gap-2">
-              <input type="submit" value="Send" className="text-primary bg-secondary px-3 py-1 rounded w-40 hover:bg-tertiary cursor-pointer"  />
+              <input type="submit" value="Send" className="text-primary bg-secondary px-3 py-1 rounded w-40 hover:bg-tertiary cursor-pointer shadow-card"  />
               <p className={`text-2xl text-tertiary ${submitted ? "opacity-100" : "opacity-0"}`}><FaCircleCheck /></p>
               </div>
           </form>
