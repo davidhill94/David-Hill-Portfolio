@@ -10,18 +10,17 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
-  const changeNav = () => {
-    if (window.scrollY >= 60) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
+  const handleScroll = () => {
+    setScrollY(window.scrollY);
   };
+  useEffect(() => {
+    handleScroll();
+  }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", changeNav);
+    window.addEventListener("scroll", handleScroll);
   }, []);
 
   const toggleHome = () => {
@@ -31,7 +30,7 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
   return (
     <nav
       className={`h-[80px] flex justify-center items-center sticky bg-primary top-0 z-10 transition ${
-        scrollNav ? "bg-primary" : "bg-transparent"
+        scrollY > 60 ? "bg-primary" : "bg-transparent"
       }`}
     >
       <div className="flex justify-between items-center h-[80px] z-50 w-full px-sectionH md:px-sectionHSm xl:px-sectionHXl">
@@ -45,7 +44,10 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
             onClick={toggleHome}
           />
         </div>
-        <div onClick={toggle} className="flex lg:hidden text-xl cursor-pointer hover:text-tertiary items-center justify-center text-secondary">
+        <div
+          onClick={toggle}
+          className="flex lg:hidden text-xl cursor-pointer hover:text-tertiary items-center justify-center text-secondary"
+        >
           <FaBars />
         </div>
         <ul className="hidden items-center h=[80px] justify-between gap-8 lg:flex">
@@ -61,19 +63,18 @@ const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
             </LinkS>
           </li>
           <li className="h-[80px] font-semibold text-5xl flex items-center cursor-pointer text-secondary hover:text-tertiary">
-          <LinkS
+            <LinkS
               to="projects"
               smooth={true}
               duration={500}
               spy={true}
               offset={-80}
             >
-              
               Projects
             </LinkS>
           </li>
           <li className="h-[80px] font-semibold text-5xl flex items-center cursor-pointer text-secondary hover:text-tertiary">
-          <LinkS
+            <LinkS
               to="contact"
               smooth={true}
               duration={500}
