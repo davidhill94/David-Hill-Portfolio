@@ -37,7 +37,7 @@ const Contact = () => {
       <div className="col-start-1 row-start-1 col-span-1 row-span-1 self-center lg:h-[600px] w-full flex items-center justify-center">
         <SectionHeader header="Contact" />
       </div>
-      <div className="flex flex-col gap-4 lg:flex-row col-start-1 lg:col-start-2 lg:row-start-1 row-span-1 col-span-2 xl:col-span-1 w-full h-auto self-center">
+      <div className="flex flex-col-reverse gap-4 lg:flex-row col-start-1 lg:col-start-2 lg:row-start-1 row-span-1 col-span-2 xl:col-span-1 w-full h-auto self-center">
         <ContactForm />
         <ContactDetails />
       </div>
