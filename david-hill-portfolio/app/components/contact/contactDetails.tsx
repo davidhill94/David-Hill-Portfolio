@@ -26,7 +26,7 @@ const ContactDetails = () => {
     "h-14 w-14 p-2 rounded-full bg-tertiary text-secondary flex items-center justify-center text-3xl cursor-pointer hover:opacity-80";
 
   return (
-    <div className="flex flex-col gap-6 items-start justify-start w-full text-secondary border border-tertiary p-4">
+    <div className="flex flex-col gap-6 items-start justify-start w-full text-secondary border-tertiary p-4">
       <h3>
         For any inquiries, whether they're about freelance opportunities,
         potential job roles, or if you just want to learn more about my journey,
