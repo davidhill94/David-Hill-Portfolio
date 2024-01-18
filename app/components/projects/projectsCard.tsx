@@ -35,7 +35,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({ card, index }) => {
 
 
   return (
-    <div ref={ref} className={`w-[250px] hover:scale-105 transition shadow-card cursor-pointer flex flex-col m-6`}>
+    <div ref={ref} className={`w-[250px] hover:scale-105 transition shadow-card cursor-pointer flex flex-col m-6 bg-fourth`}>
         {clicked ?
         <div className={`${clicked ? "bg-tertiary rounded-t-md" : "bg-secondary rounded-md"} h-[250px] w-[250px] hover:bg-tertiary flex items-center justify-center`} onClick={handleClick}>
         <Image src={card.image} alt={card.alt} className="w-[150px] h-auto"/>
@@ -46,7 +46,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({ card, index }) => {
       </div>
     }
       <div 
-      className={`${clicked ? "max-h-[450px] opacity-100 pointer-events-auto p-4" : "max-h-0 opacity-0 pointer-events-none p-4"} w-[250px] flex flex-col gap-4 items-center justify-between transition-all duration-1000 text-base bg-secondary ${clicked && techClicked ? "" : "rounded-b-md"}`}
+      className={`${clicked ? "max-h-[450px] opacity-100 pointer-events-auto py-4" : "max-h-0 opacity-0 pointer-events-none"} w-[250px] px-4 flex flex-col gap-4 items-center justify-between transition-all duration-1000 text-base bg-secondary ${clicked && techClicked ? "" : "rounded-b-md"}`}
       >
         <ProjectsDescription card={card} handleTechClick={handleTechClick} />
       </div>
