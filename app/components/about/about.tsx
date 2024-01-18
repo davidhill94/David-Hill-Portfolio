@@ -19,10 +19,10 @@ const About = () => {
     <Image 
       src={profile}
       alt="David Hill"
-      className="w-auto h-[500px] lg:h-[400px] lg:w-auto object-contain rounded-md"
+      className="w-auto h-[500px] lg:h-[400px] object-contain px-8 rounded-3xl"
     />
     
-    <div className="flex flex-col items-center justify-center text-center lg:text-start lg:items-start lg:justify-start w-full lg:w-[38rem] xl:w-[40rem] h-auto lg:h-[400px] gap-4 px-16  lg:pr-8">
+    <div className="flex flex-col items-center justify-center text-center lg:text-start lg:items-start lg:justify-start w-full lg:w-[38rem] xl:w-[40rem] min-h-[300px] gap-4 px-16 lg:px-0 lg:pr-8">
       <AboutHeader />
       <AboutContent />
     </div>

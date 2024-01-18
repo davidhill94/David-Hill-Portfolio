@@ -1,6 +1,6 @@
 const AboutContent = () => {
   return (
-    <div className="flex flex-col items-start gap-4 text-secondary">
+    <div className="flex flex-col items-start gap-4 text-secondary mb-6">
       <p>
         Hello, I'm David Hill, a self-taught Full Stack Developer from the UK. I
         used to fix bodies as a Sports Therapist, but now I'm all about fixing
