@@ -4,7 +4,7 @@ import { SiJavascript, SiJquery, SiMongodb, SiNextdotjs, SiRedux, SiTailwindcss,
 
 const Skills = () => {
     return ( 
-    <div className="bg-secondary w-full py-sectionV sm:py-sectionVSm xl:py-sectionVXl px-sectionH sm:px-sectionHSm xl:px-sectionHXl">
+    <div className="bg-secondary w-full py-sectionV sm:py-sectionVSm xl:py-sectionVXl sm:px-sectionHSm xl:px-sectionHXl">
       <div className="flex flex-wrap items-center justify-center min-h-[40vh]">
           <SkillItem icon={<FaHtml5 />} name="HTML5" />
           <SkillItem icon={<FaCss3/>} name="CSS" />
