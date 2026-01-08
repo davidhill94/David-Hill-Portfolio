@@ -1,19 +1,9 @@
-import MaidenImg from '../../../public/images/profile-image3.jpg';
-import MaidenIcon from '../../../public/images/maiden-logo.png';
-import HubLogo from '../../../public/images/hub-logo.png';
-import HubIcon from '../../../public/images/hub-logo.png';
-import cryptoLogo from '../../../public/images/profile-image3.jpg';
-import CryptoIcon from '../../../public/images/profile-image3.jpg';
-import MonitorrLogo from '../../../public/images/monitorr-logo.png';
-import MonitorrIcon from '../../../public/images/monitorr-logo.png';
-import HillsideIcon from '../../../public/images/profile-image3.jpg';
-import ComingSoon from '../../../public/images/profile-image3.jpg';
 
 export const ProjectsData = [
     {
         title: 'Monitorr Exercise Tracker',
-        image: MonitorrLogo,
-        icon: MonitorrIcon,
+        image: "/images/monitorr-logo.png",
+        icon: "/images/monitorr-logo.png",
         iconAlt: "image: Flaticon.com",
         alt: 'Moniorr Exercise Tracker',
         info: "My inaugural full stack project — a dynamic exercise tracker app. Crafted with the MERN stack and stylized using Tailwind, it offers an immersive experience in tracking workouts and fitness progress.",
@@ -23,8 +13,8 @@ export const ProjectsData = [
     },
     {
         title: 'Maiden Scorebook',
-        image: MaidenImg,
-        icon: MaidenIcon,
+        image: "/images/maiden-logo.png",
+        icon: "/images/maiden-logo.png",
         iconAlt: "image: Flaticon.com",
         alt: 'Maiden Scorebook',
         info: "A website that provides a user-friendly platform for scoring cricket games online effortlessly. With intuitive features, users can personalize their cricket experience, tailoring games to specific preferences, and enjoy a seamless scoring interface tailored to their needs",
@@ -34,8 +24,8 @@ export const ProjectsData = [
     },
     {
         title: 'myHub',
-        image: HubLogo,
-        icon: HubIcon,
+        image: "/images/hub-logo.png",
+        icon: "/images/hub-logo.png",
         iconAlt: "image: Flaticon.com",
         alt: 'myHub',
         info: "Explore my hub page – a dynamic project integrating News, Weather, and an interactive game center, showcasing a range of skills. Find real-time information and enjoy my collection of JavaScript games, all conveniently accessible on one platform",

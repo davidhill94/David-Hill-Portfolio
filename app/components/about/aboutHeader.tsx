@@ -7,7 +7,8 @@ const AboutHeader = () => {
         cursor-pointer
         w-full 
         font-extrabold
-        text-6xl 
+        text-4xl
+        xl:text-6xl 
         text-tertiary
         hover:[&>*:nth-child(1)]:animate-wiggle
         hover:[&>*:nth-child(2)]:animate-wiggle

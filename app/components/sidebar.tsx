@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { FaTimes } from "react-icons/fa";
 import { animateScroll as scroll, Link as LinkS } from "react-scroll";
-import logo from '../../public/images/profile-image3.jpg';
 import Social from "./social";
 
 interface SidebarProps {
@@ -73,7 +72,7 @@ const Sidebar: React.FC<SidebarProps> = ({ toggle, isOpen }) => {
           </li>
           <Social />
           <Image
-            src={logo}
+            src="/images/icon-david.png"
             alt="logo"
             width={100}
             height={100}
