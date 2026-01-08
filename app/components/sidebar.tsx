@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaTimes } from "react-icons/fa";
 import { animateScroll as scroll, Link as LinkS } from "react-scroll";
-import logo from "../../public/images/logo.png";
+import logo from '../../public/images/profile-image3.jpg';
 import Social from "./social";
 
 interface SidebarProps {

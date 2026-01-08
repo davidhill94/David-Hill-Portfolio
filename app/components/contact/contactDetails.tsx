@@ -63,14 +63,14 @@ const ContactDetails = () => {
             <p
               className={iconStyling}
               onClick={() => {
-                navigator.clipboard.writeText("+447818285945");
+                navigator.clipboard.writeText("+447407461560");
                 setPhone(true);
               }}
             >
               <FaPhone />
             </p>
           )}
-          <p>+447818285945</p>
+          <p>+447407461560</p>
         </div>
         <div className="flex items-center justify-start gap-2">
           {location ? (

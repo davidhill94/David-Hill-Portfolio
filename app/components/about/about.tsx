@@ -21,7 +21,7 @@ const About = () => {
       className="w-[300px] h-auto lg:h-[400px] lg:w-auto object-contain rounded-xl"
     />
     
-    <div className="flex flex-col items-center justify-center text-center lg:text-start lg:items-start lg:justify-start w-full lg:w-[38rem] xl:w-[40rem] min-h-[300px] gap-4 lg:px-0 lg:pr-8">
+    <div className="flex flex-col items-center justify-center text-center lg:text-start lg:items-start lg:justify-start px-12 py-6 lg:py-0 lg:w-[38rem] lg:min-h-[400px] h-auto gap-4 lg:px-0 lg:pr-8">
       <AboutHeader />
       <AboutContent />
     </div>

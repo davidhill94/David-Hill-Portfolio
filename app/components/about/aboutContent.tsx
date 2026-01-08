@@ -1,19 +1,17 @@
 const AboutContent = () => {
   return (
-    <div className="flex flex-col items-start gap-4 text-secondary mb-6">
+    <div className="flex flex-col items-start gap-4 text-secondary">
       <p>
-        Hello, I'm David Hill, a self-taught Full Stack Developer from the UK. I
-        used to fix bodies as a Sports Therapist, but now I'm all about fixing
-        things in the digital world!
+        Hi, I’m David Hill — a self-taught IT professional from the UK with a
+        passion for technology and problem-solving. I’m exploring different
+        areas of IT, including software, web development, and cybersecurity, and
+        I’m excited to apply my skills in real-world projects.
       </p>
       <p>
-      Every day, I'm thrilled to learn and enhance my web development skills. Shifting my focus entirely to coding, I've set aside my passion for travel. Now, I dive into backend development, solving behind-the-scenes problems, while also refining my front-end skills to create visually appealing and seamless user experiences.
-      </p>
-      <p>
-        Now, I'm on the lookout for my first job in web development. Eager to
-        apply my skills and learn even more, I'm ready for the opportunity that
-        will give me that breakthrough. Who's ready to take a chance on a
-        passionate and driven developer?
+        I bring experience from previous roles where problem-solving, attention
+        to detail, and working under pressure were key. Now, I’m focused on
+        building a career in IT, learning every day, and taking on challenges
+        that help me grow toward a long-term goal in cybersecurity.
       </p>
     </div>
   );

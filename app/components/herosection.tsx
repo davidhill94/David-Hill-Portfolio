@@ -1,6 +1,6 @@
 import Image from "next/image";
-import backgroundImg from "../../public/images/background-img-hero.png";
-import backgroundText from "../../public/images/background-text-hero.png";
+import backgroundImg from "../../public/images/hero-me.png";
+import backgroundText from '../../public/images/hero-text.png';
 
 const HeroSection = () => {
   return (
