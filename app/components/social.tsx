@@ -37,7 +37,7 @@ const Social: React.FC<SocialProps> = ({ large }) => {
       </a>
       <a
         className={`${hoverIcon}`}
-        href="//www.linkedin.com/in/david-hill-1a23883a5
+        href="www.linkedin.com/in/davidhill987
 "
         target="_blank"
         aria-label="Linkedin"
