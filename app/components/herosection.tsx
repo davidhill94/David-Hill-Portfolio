@@ -28,8 +28,8 @@ const HeroSection = () => {
       </div>
 
      {/* Right Image */}
-<div className="w-full md:w-1/2 relative flex justify-center md:justify-end items-center md:items-end p-0 md:p-6">
-  <div className="relative w-4/5 h-[32rem] lg:h-[850px]">
+<div className="w-full h-full md:w-1/2 relative flex justify-center md:justify-end items-center md:items-end p-0">
+  <div className="relative w-full h-full lg:h-[850px]">
     <Image
       src="/images/hero-me.png"
       alt="David Hill"
