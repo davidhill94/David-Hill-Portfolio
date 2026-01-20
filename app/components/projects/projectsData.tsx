@@ -12,6 +12,17 @@ export const ProjectsData = [
         tech: "Javascript, React, TailwindCSS, Node.js, Express.js, MongoDB"
     },
     {
+        title: 'Hillside Prints E-commerce',
+        image: "/images/hillside-logo.png",
+        icon: "/images/hillside-logo.png",
+        iconAlt: "image: Flaticon.com",
+        alt: 'Hillside Prints E-commerce',
+        info: "My current project building a full stack e-commerce website. A mock company that produces prints for purchase with fully functioning Authentication, Payment, Cart features. Check out my progress so far...",
+        link: "https://hillside-ecommerce.vercel.app/",
+        github: "https://github.com/davidhill94/hillside-ecommerce",
+        tech: "Typescript, React, TailwindCSS, Next.js, Node.js, MongoDB"
+    },
+    {
         title: 'Maiden Scorebook',
         image: "/images/maiden-logo.png",
         icon: "/images/maiden-logo.png",

@@ -38,7 +38,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({ card, index }) => {
     <div ref={ref} className={`w-[250px] hover:scale-105 transition shadow-card cursor-pointer flex flex-col m-6 bg-fourth`}>
         {clicked ?
         <div className={`${clicked ? "bg-tertiary rounded-t-md" : "bg-secondary rounded-md"} h-[250px] w-[250px] hover:bg-tertiary flex items-center justify-center`} onClick={handleClick}>
-        <Image src={card.image} alt={card.alt} className="w-[150px] h-auto"/>
+        <Image src={card.image} alt={card.alt} width={"150"} height={"150"} />
       </div>
     :
     <div className={`${clicked ? "bg-tertiary rounded-t-md" : "bg-secondary rounded-md"} h-[250px] w-[250px] hover:bg-tertiary flex items-center justify-center`} onClick={handleClick}>
