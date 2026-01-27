@@ -1,22 +1,28 @@
-import { useRef } from "react";
 import ProjectsCard from "./projectsCard";
 import { ProjectsData } from "./projectsData";
 
-interface RefObject {
-  refCheck: () => void,
-}
-
 const ProjectsItem = () => {
-
-  const ref = useRef<RefObject>(null);
-
   return (
-    <div className="w-full h-full flex flex-wrap gap-8 items-center justify-center py-sectionV">
-      {ProjectsData.map((card, index) => {
-        return (
-          <ProjectsCard card={card} index={index} key={index}/>
-        );
-      })}
+    <div
+      className="
+        w-full
+        max-w-6xl
+        mx-auto
+        grid
+        grid-cols-1
+        sm:grid-cols-1
+        md:grid-cols-2
+        lg:grid-cols-3
+        xl:grid-cols-4
+        gap-8
+        py-sectionV
+        justify-items-center
+        items-start
+      "
+    >
+      {ProjectsData.map((card, index) => (
+        <ProjectsCard card={card} index={index} key={index} />
+      ))}
     </div>
   );
 };

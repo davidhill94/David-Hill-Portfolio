@@ -6,7 +6,7 @@ interface ProjectsDescriptionProps{
 const ProjectsDescription: React.FC<ProjectsDescriptionProps> = ({ card, handleTechClick }) => {
   return (
     <>
-      <p>{card.info}</p>
+      <p className="pb-2">{card.info}</p>
       <div className="flex items-stretch justify-between gap-1 w-full text-[0.7rem]">
         <a
           href={card.github}

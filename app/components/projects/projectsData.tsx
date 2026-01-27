@@ -44,4 +44,48 @@ export const ProjectsData = [
         github: "https://github.com/davidhill94/HubJs",
         tech: "HTML, Styled Components, Javascript, React"
     },
+    {
+        title: 'Colormerize',
+        image: "/images/colormerize-logo.png",
+        icon: "/images/colormerize-logo.png",
+        iconAlt: "image: Flaticon.com",
+        alt: 'Colormerize',
+        info: "A memory game with two game modes and 3 difficulties. One of the first games I build to practice my Javascript, HTML, CSS, and React.",
+        link: "https://splendorous-sundae-769eb0.netlify.app/",
+        github: "https://github.com/davidhill94/Colormerize-Memory-Game",
+        tech: "HTML, CSS, Javascript, React"
+    },
+    {
+        title: 'Tic Tac Toe',
+        image: "/images/tictactoe-logo.png",
+        icon: "/images/tictactoe-logo.png",
+        iconAlt: "image: Flaticon.com",
+        alt: 'Tic Tac Toe',
+        info: "A classic Tic Tac Toe game built using React.",
+        link: "https://dancing-malasada-fa3516.netlify.app",
+        github: "https://github.com/davidhill94/TicTacToe",
+        tech: "HTML, CSS, Javascript, React"
+    },
+    {
+        title: 'Minesweeper',
+        image: "/images/minesweeper-logo.png",
+        icon: "/images/minesweeper-logo.png",
+        iconAlt: "image: Flaticon.com",
+        alt: 'Minesweeper',
+        info: "A Minesweeper project built to improve my function writing - adding more complex game logic to my portfolio - Built using React.",
+        link: "https://iridescent-sprinkles-24ea35.netlify.app",
+        github: "https://github.com/davidhill94/Minesweeper",
+        tech: "HTML, CSS, Javascript, React"
+    },
+    {
+        title: 'Rock Paper Scissors',
+        image: "/images/rps-logo.png",
+        icon: "/images/rps-logo.png",
+        iconAlt: "image: Flaticon.com",
+        alt: 'Rock Paper Scissors',
+        info: "A Fun and capturing Rock Paper Scissors game built using React. Can you beat the Computer?",
+        link: "https://rainbow-crisp-cecb77.netlify.app/",
+        github: "https://github.com/davidhill94/Rock-Paper-Scissors",
+        tech: "HTML, CSS, Javascript, React"
+    },
 ];

@@ -3,54 +3,98 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useOutsideClick } from "../../utils/outsideClick";
-import TechStack from "./techStack";
 import ProjectsDescription from "./projectsDescription";
+import TechStack from "./techStack";
 
-interface ProjectsCardProps{
-    card: any,
-    index: number
+interface ProjectsCardProps {
+  card: any;
+  index: number;
 }
 
 const ProjectsCard: React.FC<ProjectsCardProps> = ({ card, index }) => {
-
-  const [clicked, setClicked] = useState(false);
-  const [techClicked, setTechClicked] = useState(false);
-
-  const handleTechClick = () => {
-    setTechClicked(!techClicked);
-  };
-
-  const handleClick = () => {
-    setClicked(!clicked)
-    if(techClicked){
-        setTechClicked(false);
-    }
-  };
+  const [open, setOpen] = useState(false);
+  const [techOpen, setTechOpen] = useState(false);
 
   const ref = useOutsideClick(() => {
-    setTechClicked(false);
-    setClicked(false);
+    setOpen(false);
+    setTechOpen(false);
   });
 
+  const handleCardClick = () => {
+    setOpen(!open);
+    if (techOpen) setTechOpen(false);
+  };
 
+  const handleTechClick = () => {
+    setTechOpen(!techOpen);
+  };
 
   return (
-    <div ref={ref} className={`w-[250px] hover:scale-105 transition shadow-card cursor-pointer flex flex-col m-6 bg-fourth`}>
-        {clicked ?
-        <div className={`${clicked ? "bg-tertiary rounded-t-md" : "bg-secondary rounded-md"} h-[250px] w-[250px] hover:bg-tertiary flex items-center justify-center`} onClick={handleClick}>
-        <Image src={card.image} alt={card.alt} width={"150"} height={"150"} />
-      </div>
-    :
-    <div className={`${clicked ? "bg-tertiary rounded-t-md" : "bg-secondary rounded-md"} h-[250px] w-[250px] hover:bg-tertiary flex items-center justify-center`} onClick={handleClick}>
-        <Image src={card.icon} alt={card.iconAlt} width={"200"} height={"200"}/>
-      </div>
-    }
-      <div 
-      className={`${clicked ? "max-h-[450px] opacity-100 pointer-events-auto py-4" : "max-h-0 opacity-0 pointer-events-none"} w-[250px] px-4 flex flex-col gap-4 items-center justify-between transition-all duration-1000 text-base bg-secondary ${clicked && techClicked ? "" : "rounded-b-md"}`}
+    <div
+      ref={ref}
+      className="
+        w-full
+        max-w-[250px]
+        bg-fourth
+        shadow-card
+        rounded-md
+        overflow-hidden
+        cursor-pointer
+        transition
+        hover:scale-105
+        flex
+        flex-col
+      "
+    >
+      {/* CARD IMAGE */}
+      <div
+        className={`
+          ${open ? "bg-tertiary" : "bg-secondary"}
+          hover:bg-tertiary
+          w-full
+          aspect-square
+          flex items-center justify-center
+        `}
+        onClick={handleCardClick}
       >
-        <ProjectsDescription card={card} handleTechClick={handleTechClick} />
+        <div className="relative w-[70%] h-[70%]">
+          <Image
+            src={open ? card.image : card.icon}
+            alt={open ? card.alt : card.iconAlt}
+            fill
+            className="object-contain"
+          />
+        </div>
       </div>
-      <TechStack techClicked={techClicked} card={card} />
+
+      {/* DESCRIPTION + BUTTONS */}
+      <div
+        className={`
+          w-full
+          bg-secondary
+          overflow-hidden
+          transition-all duration-500
+          ${open ? "max-h-[500px] opacity-100 p-4" : "max-h-0 opacity-0 p-0"}
+        `}
+      >
+        <ProjectsDescription
+          card={card}
+          handleTechClick={handleTechClick}
+        />
+      </div>
+
+      {/* TECH STACK */}
+      <div
+        className={`
+          w-full
+          bg-secondary
+          overflow-hidden
+          transition-all duration-500
+          ${techOpen ? "max-h-[350px] opacity-100 p-4" : "max-h-0 opacity-0 p-0"}
+        `}
+      >
+        <TechStack card={card} />
+      </div>
     </div>
   );
 };
